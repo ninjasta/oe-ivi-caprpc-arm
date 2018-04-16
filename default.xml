@@ -1,52 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <default revision="rocko" sync-j="4"/>
+  <default revision="master" sync-j="4"/>
 
   <remote fetch="http://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="https://github.com" name="github"/>
   <remote fetch="http://git.linaro.org" name="linaro"/>
   <remote fetch="http://git.shr-project.org" name="shr"/>
+  <remote fetch="https://git.automotivelinux.org/AGL" name=AGL/>
 
-  <project remote="linaro" name="openembedded/meta-linaro" path="layers/meta-linaro"/>
-  <project remote="linaro" name="openembedded/meta-backports" path="layers/meta-backports"/>
+  <project remote="linaro" name="openembedded/meta-linaro" path="oe-linux/meta-linaro"/>
 
-  <project remote="github" name="openembedded/openembedded-core" path="layers/openembedded-core"/>
-  <project remote="github" name="openembedded/meta-openembedded" path="layers/meta-openembedded"/>
-  <project remote="github" name="openembedded/bitbake" path="bitbake" revision="1.36" />
-  <project remote="github" name="kraj/meta-altera" path="layers/meta-altera"/>
-  <project remote="github" name="meta-qt5/meta-qt5" path="layers/meta-qt5"/>
-  <project remote="github" name="shr-distribution/meta-smartphone" path="layers/meta-smartphone"/>
-  <project remote="github" name="Freescale/meta-freescale-3rdparty" path="layers/meta-freescale-3rdparty"/>
-  <project remote="github" name="96boards/meta-96boards" path="layers/meta-96boards"/>
-  <project remote="github" name="linux4sam/meta-atmel" path="layers/meta-atmel" revision="morty"/>
-  <project remote="github" name="koenkooi/meta-dominion" path="layers/meta-dominion"/>
-  <project remote="github" name="koenkooi/meta-uav" path="layers/meta-uav"/>
-  <project remote="github" name="koenkooi/meta-photography" path="layers/meta-photography"/>
-  <project remote="github" name="koenkooi/meta-edison" path="layers/meta-edison"/>
-  <project remote="github" name="koenkooi/meta-beagleboard" path="layers/meta-beagleboard"/>
-  <project remote="github" name="koenkooi/meta-kodi" path="layers/meta-kodi"/>
-  <project remote="github" name="ndechesne/meta-qcom" path="layers/meta-qcom"/>
-  <project remote="github" name="agherzan/meta-raspberrypi" path="layers/meta-raspberrypi"/>
-  <project remote="github" name="superna9999/meta-meson" path="layers/meta-meson"/>
-  <project remote="github" name="Angstrom-distribution/meta-angstrom" path="layers/meta-angstrom" revision="angstrom-v2017.12-rocko" >
+  <project remote="oe"     name="meta-handheld" path="oe-linux/meta-handheld"/>
+  <project remote="oe"     name="meta-opie" path="oe-linux/meta-opie"/>
+
+  <project remote="github" name="openembedded/openembedded-core" path="oe-linux/openembedded-core"/>
+  <project remote="github" name="openembedded/meta-openembedded" path="oe-linux/meta-openembedded"/>
+  <project remote="github" name="openembedded/bitbake" path="bitbake"/>
+  <project remote="github" name="kraj/meta-altera" path="oe-linux/meta-altera"/>
+  <project remote="github" name="openpandora/meta-openpandora" path="oe-linux/meta-openpandora"/>
+  <project remote="github" name="OSSystems/meta-browser" path="oe-linux/meta-browser"/>
+  <project remote="github" name="meta-qt5/meta-qt5" path="oe-linux/meta-qt5"/>
+  <project remote="github" name="shr-distribution/meta-smartphone" path="oe-linux/meta-smartphone"/>
+  <project remote="github" name="Freescale/meta-freescale-3rdparty" path="oe-linux/meta-freescale-3rdparty"/>
+  <project remote="github" name="bmwcarit/meta-ros" path="oe-linux/meta-ros"/>
+  <project remote="github" name="linux-sunxi/meta-sunxi" path="oe-linux/meta-sunxi"/>
+  <project remote="github" name="96boards/meta-96boards" path="oe-linux/meta-96boards"/>
+  <project remote="github" name="linux4sam/meta-atmel" path="oe-linux/meta-atmel" revision="morty"/>
+  <project remote="github" name="koenkooi/meta-dominion" path="oe-linux/meta-dominion"/>
+  <project remote="github" name="agherzan/meta-chip" path="oe-linux/meta-chip"/>
+  <project remote="github" name="agherzan/meta-raspberrypi" path="oe-linux/meta-raspberrypi"/>
+  <project remote="github" name="madison/meta-tegra" path="oe-loe-linux/meta-tegra"/>
+  <project remote="github" name="madison/meta-toradex-tegra" path="oe-loe-linux/meta-toradex-tegra"/>
+  <project remote="github" name="beagleboard/meta-beagleboard" path="oe-linux/meta-beagleboard"/>
+  <project remote="github" name="toganlabs/meta-arduino" arduino/meta-arduino 
+  <project remote="github" name="Angstrom-distribution/meta-angstrom" path="oe-linux/meta-angstrom">
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
-  <project remote="github" name="linux-sunxi/meta-sunxi" path="layers/meta-sunxi" revision="cee0b74ce4f72710b594a5bdcc7e533f43f71bc9" upstream="master"/>
-  <project remote="github" name="bmwcarit/meta-ros" path="layers/meta-ros" revision="121b182599a06335c0e648d90f781e66007bcd18" upstream="master"/>
-  <project remote="github" name="OSSystems/meta-browser" path="layers/meta-browser" revision="4dda3fb94072a515763d816e15855d7fdf210a25" upstream="master"/>
-  <project remote="github" name="schnitzeltony/meta-gumstix-community" path="layers/meta-gumstix-community" revision="c8e7ec7f391a4b66adadac090d55beba18e1117e" upstream="master"/>
-  <project remote="github" name="kraj/meta-nslu2" path="layers/meta-nslu2" revision="8f35264fe9bb38439ece38c0c324cec792b22a8f" upstream="master"/>
-  <project remote="github" name="agherzan/meta-chip" path="layers/meta-chip" revision="4ce5116136daec211a58b0579f88569ed21a075c" upstream="master"/>
 
-  <project remote="yocto" name="meta-freescale" path="layers/meta-freescale"/>
-  <project remote="yocto" name="meta-intel" path="layers/meta-intel"/>
-  <project remote="yocto" name="meta-mono" path="layers/meta-mono"/>
-  <project remote="yocto" name="meta-maker" path="layers/meta-maker"/>
-  <project remote="yocto" name="meta-qt4" path="layers/meta-qt4"/>
-  <project remote="yocto" name="meta-ti" path="layers/meta-ti" revision="8fcd2f60720acf46555b45a1a48ad1fa0c52b75a" upstream="master"/>
-  <project remote="yocto" name="meta-xilinx" path="layers/meta-xilinx" revision="6ddc5873b0ede30e6542f0ab151a6236acc37944" upstream="master"/>
-  <project remote="yocto" name="meta-java" path="layers/meta-java" revision="03e35bf64f97980652ac532cca0ea96e730a551c" upstream="master"/>
+  <project remote="yocto" name="meta-intel-iot-middleware" path="oe-linux/meta-intel-iot-middleware"/>
+  <project remote="yocto" name="meta-freescale" path="oe-linux/meta-freescale"/>
+  <project remote="yocto" name="meta-intel" path="oe-linux/meta-intel"/>
+  <project remote="yocto" name="meta-intel-quark path="oe-linux/meta-intel-quark"/>
+  <project remote="yocto" name="meta-intel-edison" path="oe-linux/meta-intel-edison"/>
+  <project remote="yocto" name="meta-intel-galileo" path="oe-linux/meta-intel-galileo"/>
+  <project remote="yocto" name="meta-xilinx" path="oe-linux/meta-xilinx"/>
+  <project remote="yocto" name="meta-ti" path="oe-linux/meta-ti"/>
+  <project remote="yocto" name="meta-amd" path="oe-linux/meta-amd"/>
+  <project remote="yocto" name="meta-mono" path="oe-linux/meta-mono"/>
+  <project remote="yocto" name="meta-java" path="oe-linux/meta-java"/>
+  <project remote="yocto" name="meta-maker" path="oe-linux/meta-maker"/>
+  <project remote="yocto" name="meta-qt4" path="oe-linux/meta-qt4"/>
+  <project remote="yocto" name="meta-ivi" path="oe-linux/meta-ivi"/>
+  <project remote="yocto" name="meta-ivi-bsp" path="oe-linux/meta-ivi-bsp"/>
+  <project remote="yocto" name="meta-ivi-pelux" path="ivi/meta-ivi-bsp"/>
+
+  <project remote="AGL" name="meta-AGL" path="AG-Linux"/>
 
 </manifest>
