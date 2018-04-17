@@ -17,10 +17,10 @@
 
   <project remote="github" name="openembedded/openembedded-core" path="oe-linux/openembedded-core"/>
   <project remote="github" name="openembedded/meta-openembedded" path="oe-linux/meta-openembedded"/>
-  <project remote="github" name="openembedded/bitbake" path="bitbake"/>
-  <project remote="github" name="kraj/meta-altera" path="oe-linux/meta-altera"/>
-  <project remote="github" name="OSSystems/meta-browser" path="oe-linux/meta-browser"/>
-  <project remote="github" name="meta-qt5/meta-qt5" path="oe-linux/meta-qt5"/>
+  <project remote="github" name="openembedded/bitbake" 		 path="bitbake"/>
+  <project remote="github" name="kraj/meta-altera" 		 path="oe-linux/meta-altera"/>
+  <project remote="github" name="OSSystems/meta-browser" 	 path="oe-linux/meta-browser"/>
+  <project remote="github" name="meta-qt5/meta-qt5" 		 path="oe-linux/meta-qt5"/>
   <project remote="github" name="shr-distribution/meta-smartphone" path="oe-linux/meta-smartphone"/>
   <project remote="github" name="Freescale/meta-freescale-3rdparty" path="oe-linux/meta-freescale-3rdparty"/>
   <project remote="github" name="linux4sam/meta-atmel" path="oe-linux/meta-atmel" revision="morty"/>
@@ -29,7 +29,7 @@
   <project remote="github" name="madison/meta-tegra" path="oe-loe-linux/meta-tegra"/>
   <project remote="github" name="madison/meta-toradex-tegra" path="oe-loe-linux/meta-toradex-tegra"/>
   <project remote="github" name="beagleboard/meta-beagleboard" path="oe-linux/meta-beagleboard"/>
-  <project remote="github" name="toganlabs/meta-arduino" arduino/meta-arduino 
+  <project remote="github" name="toganlabs/meta-arduino" path="arduino/meta-arduino"/> 
   <project remote="github" name="Angstrom-distribution/meta-angstrom" path="oe-linux/meta-angstrom">
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
@@ -37,7 +37,7 @@
   <project remote="yocto" name="meta-intel-iot-middleware" path="oe-linux/meta-intel-iot-middleware"/>
   <project remote="yocto" name="meta-freescale" path="oe-linux/meta-freescale"/>
   <project remote="yocto" name="meta-intel" path="oe-linux/meta-intel"/>
-  <project remote="yocto" name="meta-intel-quark path="oe-linux/meta-intel-quark"/>
+  <project remote="yocto" name="meta-intel-quark" path="oe-linux/meta-intel-quark"/>
   <project remote="yocto" name="meta-intel-edison" path="oe-linux/meta-intel-edison"/>
   <project remote="yocto" name="meta-intel-galileo" path="oe-linux/meta-intel-galileo"/>
   <project remote="yocto" name="meta-xilinx" path="oe-linux/meta-xilinx"/>
