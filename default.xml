@@ -19,17 +19,12 @@
   <project remote="github" name="openembedded/meta-openembedded" path="oe-linux/meta-openembedded"/>
   <project remote="github" name="openembedded/bitbake" path="bitbake"/>
   <project remote="github" name="kraj/meta-altera" path="oe-linux/meta-altera"/>
-  <project remote="github" name="openpandora/meta-openpandora" path="oe-linux/meta-openpandora"/>
   <project remote="github" name="OSSystems/meta-browser" path="oe-linux/meta-browser"/>
   <project remote="github" name="meta-qt5/meta-qt5" path="oe-linux/meta-qt5"/>
   <project remote="github" name="shr-distribution/meta-smartphone" path="oe-linux/meta-smartphone"/>
   <project remote="github" name="Freescale/meta-freescale-3rdparty" path="oe-linux/meta-freescale-3rdparty"/>
-  <project remote="github" name="bmwcarit/meta-ros" path="oe-linux/meta-ros"/>
-  <project remote="github" name="linux-sunxi/meta-sunxi" path="oe-linux/meta-sunxi"/>
-  <project remote="github" name="96boards/meta-96boards" path="oe-linux/meta-96boards"/>
   <project remote="github" name="linux4sam/meta-atmel" path="oe-linux/meta-atmel" revision="morty"/>
   <project remote="github" name="koenkooi/meta-dominion" path="oe-linux/meta-dominion"/>
-  <project remote="github" name="agherzan/meta-chip" path="oe-linux/meta-chip"/>
   <project remote="github" name="agherzan/meta-raspberrypi" path="oe-linux/meta-raspberrypi"/>
   <project remote="github" name="madison/meta-tegra" path="oe-loe-linux/meta-tegra"/>
   <project remote="github" name="madison/meta-toradex-tegra" path="oe-loe-linux/meta-toradex-tegra"/>
