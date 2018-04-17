@@ -6,9 +6,11 @@
   <remote fetch="http://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="https://github.com" name="github"/>
+  <remote fetch="https://gitlab.com" name="gitlab"/>
   <remote fetch="http://git.linaro.org" name="linaro"/>
   <remote fetch="http://git.shr-project.org" name="shr"/>
   <remote fetch="https://git.automotivelinux.org/AGL" name="AGL"/>
+  <remote fetch="https://git.toradex.com" name="toradex"/>
 
   <project remote="linaro" name="openembedded/meta-linaro" path="oe-linux/meta-linaro"/>
 
@@ -27,9 +29,9 @@
   <project remote="github" name="koenkooi/meta-dominion" path="oe-linux/meta-dominion"/>
   <project remote="github" name="agherzan/meta-raspberrypi" path="oe-linux/meta-raspberrypi"/>
   <project remote="github" name="madison/meta-tegra" path="oe-loe-linux/meta-tegra"/>
-  <project remote="github" name="madison/meta-toradex-tegra" path="oe-loe-linux/meta-toradex-tegra"/>
+  <project remote="github" name="meta-toradex-tegra" path="oe-loe-linux/meta-toradex-tegra"/>
   <project remote="github" name="beagleboard/meta-beagleboard" path="oe-linux/meta-beagleboard"/>
-  <project remote="github" name="toganlabs/meta-arduino" path="arduino/meta-arduino"/> 
+  <project remote="gitlab" name="toganlabs/meta-arduino" path="arduino/meta-arduino"/> 
   <project remote="github" name="Angstrom-distribution/meta-angstrom" path="oe-linux/meta-angstrom">
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
@@ -49,7 +51,7 @@
   <project remote="yocto" name="meta-qt4" path="oe-linux/meta-qt4"/>
   <project remote="yocto" name="meta-ivi" path="oe-linux/meta-ivi"/>
   <project remote="yocto" name="meta-ivi-bsp" path="oe-linux/meta-ivi-bsp"/>
-  <project remote="yocto" name="meta-ivi-pelux" path="ivi/meta-ivi-bsp"/>
+  <project remote="github" name="pelagicore/meta-ivi-pelux" path="ivi/meta-ivi-pelux"/>
 
   <project remote="AGL" name="meta-AGL" path="AG-Linux"/>
 
