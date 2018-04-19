@@ -54,7 +54,7 @@
   <!-- Kodi meta layer seems to be broken
   <project remote="gitweb" name="koenkooi/meta-kodi" 			path="oe-linux/meta-kodi"/> -->
   <project remote="github" name="linux-sunxi/meta-sunxi" 		path="oe-linux/meta-sunxi"/>
-<!--  <project remote="github" name="agherzan/meta-raspberrypi" 		path="oe-linux/meta-raspberrypi"/> -->
+  <project remote="github" name="agherzan/meta-raspberrypi" 		path="oe-linux/meta-raspberrypi"/>
   <project remote="github" name="Angstrom-distribution/meta-angstrom"   path="oe-linux/meta-angstrom">
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
@@ -64,7 +64,6 @@
   <project remote="yocto" name="meta-intel" 			path="oe-linux/meta-intel"/>
   <project remote="yocto" name="meta-xilinx" 			path="oe-linux/meta-xilinx"/>
   <project remote="yocto" name="meta-ti" 			path="oe-linux/meta-ti"/>
-  <project remote="yocto" name="meta-raspberrypi" 		path="oe-linux/meta-raspberrypi" revision="default" />
   <project remote="yocto" name="meta-amd" 			path="oe-linux/meta-amd"/>
   <project remote="yocto" name="meta-mono" 			path="oe-linux/meta-mono"/>
   <project remote="yocto" name="meta-java" 			path="oe-linux/meta-java"/>
