@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
+  <!-- settings -->
   <default revision="master" sync-j="4"/>
 
+  <!-- Remotes -->
+  <remote fetch="git://git.openembedded.org"    name="oe"/>
+  <remote fetch="git://github.com/"             name="github"/>
   <remote fetch="http://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="https://github.com" name="github"/>
@@ -10,7 +13,28 @@
   <remote fetch="http://git.linaro.org" name="linaro"/>
   <remote fetch="http://git.shr-project.org" name="shr"/>
   <remote fetch="https://git.automotivelinux.org/AGL" name="AGL"/>
-  <remote fetch="https://git.toradex.com" name="toradex"/>
+
+ <!-- Base stuff -->
+  <project remote="oe"
+           revision="5e82995148a2844c6f483ae5ddd1438d87ea9fb7"
+           name="meta-openembedded"
+           path="oe-linux/meta-openembedded"/>
+
+  <project remote="github"
+           revision="2c7899b9f71ce614a253d7875fe64e170159281a"
+           name="Pelagicore/meta-bistro"
+           path="ivi/sources/meta-bistro" />
+
+  <project remote="github"
+           revision="4861f6d58042909e6c79cb301c6eb39c349011bf"
+           name="Pelagicore/meta-pelux"
+           path="ivi/sources/meta-pelux" />
+
+  <!-- Qt Support stuff -->
+  <project remote="code.qt"
+           revision="c6aa602d0640040b470ee81de39726276ddc0ea3"
+           name="yocto/meta-qt5"
+           path="oe-linux/meta-qt5"/>
 
   <project remote="linaro" name="openembedded/meta-linaro" path="oe-linux/meta-linaro"/>
 
@@ -18,18 +42,16 @@
   <project remote="oe"     name="meta-opie"     path="oe-linux/meta-opie"/>
 
   <project remote="github" name="openembedded/openembedded-core" path="oe-linux/openembedded-core"/>
-  <project remote="github" name="openembedded/meta-openembedded" path="oe-linux/meta-openembedded"/>
+<!--  <project remote="github" name="openembedded/meta-openembedded" path="oe-linux/meta-openembedded"/> -->
   <project remote="github" name="openembedded/bitbake" 		 path="bitbake"/>
   <project remote="github" name="kraj/meta-altera" 		 path="oe-linux/meta-altera"/>
   <project remote="github" name="OSSystems/meta-browser" 	 path="oe-linux/meta-browser"/>
-  <project remote="github" name="meta-qt5/meta-qt5" 		 path="oe-linux/meta-qt5"/>
+<!--  <project remote="github" name="meta-qt5/meta-qt5" 		 path="oe-linux/meta-qt5"/> -->
   <project remote="github" name="shr-distribution/meta-smartphone" path="oe-linux/meta-smartphone"/>
   <project remote="github" name="Freescale/meta-freescale-3rdparty" path="oe-linux/meta-freescale-3rdparty"/>
   <project remote="github" name="linux4sam/meta-atmel" path="oe-linux/meta-atmel" revision="morty"/>
   <project remote="github" name="koenkooi/meta-dominion" path="oe-linux/meta-dominion"/>
   <project remote="github" name="agherzan/meta-raspberrypi" path="oe-linux/meta-raspberrypi"/>
-  <project remote="github" name="madison/meta-tegra" path="oe-loe-linux/meta-tegra"/>
-  <project remote="github" name="meta-toradex-tegra" path="oe-loe-linux/meta-toradex-tegra"/>
   <project remote="github" name="Angstrom-distribution/meta-angstrom" path="oe-linux/meta-angstrom">
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
@@ -47,8 +69,7 @@
   <project remote="yocto" name="meta-java" path="oe-linux/meta-java"/>
   <project remote="yocto" name="meta-maker" path="oe-linux/meta-maker"/>
   <project remote="yocto" name="meta-qt4" path="oe-linux/meta-qt4"/>
-  <project remote="yocto" name="meta-ivi" path="oe-linux/meta-ivi"/>
-  <project remote="github" name="pelagicore/meta-ivi-pelux" path="ivi/meta-ivi-pelux"/>
+  <project remote="yocto" name="meta-ivi" path="ivi/meta-ivi"/>
 
   <project remote="AGL" name="meta-AGL" path="AG-Linux"/>
 
