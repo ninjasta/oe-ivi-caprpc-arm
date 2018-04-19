@@ -35,9 +35,9 @@
            revision="c6aa602d0640040b470ee81de39726276ddc0ea3"
            name="yocto/meta-qt5"
            path="oe-linux/meta-qt5"/>
-
+  <!-- Linaro Git Recipes -->
   <project remote="linaro" name="openembedded/meta-linaro" path="oe-linux/meta-linaro"/>
-
+  <project remote="linaro" name="openembedded/meta-backports" path="layers/meta-backports"/>
   <!-- Anstrom sourced Meta layers descriptions -->
   <project remote="oe"     name="meta-handheld" path="oe-linux/meta-handheld"/>
   <project remote="oe"     name="meta-opie"     path="oe-linux/meta-opie"/>
@@ -52,7 +52,7 @@
   <project remote="github" name="linux4sam/meta-atmel" 			path="oe-linux/meta-atmel" revision="morty"/>
   <project remote="github" name="koenkooi/meta-dominion" 		path="oe-linux/meta-dominion"/>
   <!-- Kodi meta layer -->
-  <project remote="gitweb" name="koenkooi/meta-kodi.git"		path="oe-linux/meta-kodi"/>
+  <project remote="github" name="koenkooi/meta-kodi" 			path="oe-linux/meta-kodi"/>
   <project remote="github" name="agherzan/meta-raspberrypi" 		path="oe-linux/meta-raspberrypi"/>
   <project remote="github" name="Angstrom-distribution/meta-angstrom"   path="oe-linux/meta-angstrom">
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
