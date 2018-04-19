@@ -6,7 +6,7 @@
   <!-- Remotes -->
   <remote fetch="git://git.openembedded.org"    	name="oe"/>
   <remote fetch="git://github.com"	             	name="github"/>
-  <remote fetch="http://git.yoctoproject.org" 		name="yocto"/>
+  <remote fetch="git://git.yoctoproject.org" 		name="yocto"/>
   <remote fetch="https://gitlab.com" 			name="gitlab"/>
   <remote fetch="http://git.linaro.org" 		name="linaro"/>
   <remote fetch="http://git.shr-project.org" 		name="shr"/>
@@ -70,6 +70,6 @@
   <project remote="yocto" name="meta-qt4" path="oe-linux/meta-qt4"/>
   <project remote="yocto" name="meta-ivi" path="ivi/meta-ivi"/>
 
-  <project remote="AGL" name="meta-AGL" path="AG-Linux"/>
+  <project remote="AGL" name="meta-agl" path="AG-Linux"/>
 
 </manifest>
