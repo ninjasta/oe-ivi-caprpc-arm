@@ -52,7 +52,7 @@
   <project remote="github" name="linux4sam/meta-atmel" 			path="oe-linux/meta-atmel" revision="morty"/>
   <project remote="github" name="koenkooi/meta-dominion" 		path="oe-linux/meta-dominion"/>
   <!-- Kodi meta layer -->
-  <project remote="gitweb" name="koenkooi/meta-kodi"			path="oe-linux/meta-kodi"/>
+  <project remote="gitweb" name="koenkooi/meta-kodi.git"		path="oe-linux/meta-kodi"/>
   <project remote="github" name="agherzan/meta-raspberrypi" 		path="oe-linux/meta-raspberrypi"/>
   <project remote="github" name="Angstrom-distribution/meta-angstrom"   path="oe-linux/meta-angstrom">
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
