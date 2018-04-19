@@ -11,6 +11,7 @@
   <remote fetch="http://git.linaro.org" 		name="linaro"/>
   <remote fetch="http://git.shr-project.org" 		name="shr"/>
   <remote fetch="https://git.automotivelinux.org/AGL" 	name="AGL"/>
+  <remote fetch="git://code.qt.io/"            		name="code.qt"/>
 
  <!-- Base stuff -->
   <project remote="oe"
