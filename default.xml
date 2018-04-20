@@ -56,7 +56,7 @@
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
 
-  <project remote="yocto" name="poky"                           path="oe-linux/poky" revision="rocko"
+  <project remote="yocto" name="poky"                           path="oe-linux/poky" revision="rocko" />
   <project remote="yocto" name="meta-intel-iot-middleware"	path="oe-linux/meta-intel-iot-middleware"/>
   <project remote="yocto" name="meta-freescale" 		path="oe-linux/meta-freescale"/>
   <project remote="yocto" name="meta-intel" 			path="oe-linux/meta-intel"/>
