@@ -16,7 +16,7 @@
 
  <!-- Base stuff from Pelux -->
   <project remote="oe"
-           revision="rocko"
+           revision="5e82995148a2844c6f483ae5ddd1438d87ea9fb7"
            name="meta-openembedded"
            path="oe-linux/meta-openembedded"/>
 
