@@ -75,6 +75,6 @@
   <project remote="yocto" name="meta-qt4" 			path="oe-linux/meta-qt4"/>
   <project remote="yocto" name="meta-ivi" 			path="ivi/meta-ivi"/>
   <project remote="yocto" name="meta-virtualization"		path="ivi/meta-virtualization"/>
-  <project remote="AGL" name="meta-agl" path="AG-Linux"/>
+  <project remote="AGL" name="meta-agl" path="AG-Linux" revsion="eel"/>
 
 </manifest>
