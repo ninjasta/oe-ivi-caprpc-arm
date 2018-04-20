@@ -42,7 +42,7 @@
   <project remote="oe"     name="meta-handheld" path="oe-linux/meta-handheld"/>
   <project remote="oe"     name="meta-opie"     path="oe-linux/meta-opie"/>
 
-  <project remote="github" name="96boards/meta-96boards" path="layers/meta-96boards"/>
+  <project remote="github" name="96boards/meta-96boards" path="oe-linux/meta-96boards"/>
   <project remote="github" name="openembedded/openembedded-core" 	path="oe-linux/openembedded-core" revision="sumo"/>
   <project remote="github" name="openembedded/bitbake" 		 	path="bitbake" revision="1.36"/>
   <project remote="github" name="kraj/meta-altera" 		 	path="oe-linux/meta-altera"/>
