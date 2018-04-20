@@ -36,7 +36,7 @@
            name="yocto/meta-qt5"
            path="oe-linux/meta-qt5"/>
   <!-- Linaro Git Recipes -->
-  <project remote="linaro" name="openembedded/meta-linaro" path="oe-linux/meta-linaro"/>
+  <project remote="linaro" name="openembedded/meta-linaro" path="oe-linux/meta-linaro" revsion="rocko"/>
   <project remote="linaro" name="openembedded/meta-backports" path="oe-linux/meta-backports"/>
   <!-- Anstrom sourced Meta layers descriptions -->
   <project remote="oe"     name="meta-handheld" path="oe-linux/meta-handheld"/>
@@ -56,6 +56,7 @@
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
 
+  <project remote="yocto" name="poky"                           path="oe-linux/poky" revision="rocko"
   <project remote="yocto" name="meta-intel-iot-middleware"	path="oe-linux/meta-intel-iot-middleware"/>
   <project remote="yocto" name="meta-freescale" 		path="oe-linux/meta-freescale"/>
   <project remote="yocto" name="meta-intel" 			path="oe-linux/meta-intel"/>
