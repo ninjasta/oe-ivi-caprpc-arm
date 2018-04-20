@@ -48,7 +48,7 @@
 
   <project remote="github" name="96boards/meta-96boards"                path="oe-linux/meta-96boards"/>
   <project remote="github" name="OverC/meta-qemuarma9"                  path="oe-linux/meta-qemuarma9"/>
-  <project remote="github" name="openembedded/openembedded-core" 	path="oe-linux/openembedded-core" revision="sumo"/>
+  <project remote="github" name="openembedded/openembedded-core" 	path="oe-linux/openembedded-core" revision="rocko"/>
   <project remote="github" name="openembedded/bitbake" 		 	path="bitbake" revision="1.36"/>
   <project remote="github" name="kraj/meta-altera" 		 	path="oe-linux/meta-altera"/>
   <project remote="github" name="OSSystems/meta-browser" 	 	path="oe-linux/meta-browser"/>
@@ -62,7 +62,7 @@
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
 
-  <project remote="yocto" name="poky"                           path="oe-linux/poky" revision="sumo" />
+  <project remote="yocto" name="poky"                           path="oe-linux/poky" revision="rocko" />
   <project remote="yocto" name="meta-intel-iot-middleware"	path="oe-linux/meta-intel-iot-middleware"/>
   <project remote="yocto" name="meta-freescale" 		path="oe-linux/meta-freescale"/>
   <project remote="yocto" name="meta-intel" 			path="oe-linux/meta-intel"/>
