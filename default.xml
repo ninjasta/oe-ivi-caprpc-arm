@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+revision<?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- settings -->
   <default revision="master" sync-j="4"/>
@@ -16,7 +16,6 @@
 
  <!-- Base stuff from Pelux -->
   <project remote="oe"
-           <!-- revision="5e82995148a2844c6f483ae5ddd1438d87ea9fb7" -->
            revision="rocko"
            name="meta-openembedded"
            path="oe-linux/meta-openembedded"/>
@@ -43,7 +42,7 @@
   <project remote="oe"     name="meta-handheld" path="oe-linux/meta-handheld"/>
   <project remote="oe"     name="meta-opie"     path="oe-linux/meta-opie"/>
 
-  <project remote="github" name="openembedded/openembedded-core" 	path="oe-linux/openembedded-core" revision=rocko/>
+  <project remote="github" name="openembedded/openembedded-core" 	path="oe-linux/openembedded-core" revision="rocko"/>
   <project remote="github" name="openembedded/bitbake" 		 	path="bitbake"/>
   <project remote="github" name="kraj/meta-altera" 		 	path="oe-linux/meta-altera"/>
   <project remote="github" name="OSSystems/meta-browser" 	 	path="oe-linux/meta-browser"/>
