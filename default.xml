@@ -69,7 +69,7 @@
   <project remote="yocto" name="meta-maker" 			path="oe-linux/meta-maker"/>
   <project remote="yocto" name="meta-qt4" 			path="oe-linux/meta-qt4"/>
   <project remote="yocto" name="meta-ivi" 			path="ivi/meta-ivi"/>
-
+  <project remote="yocto" name="meta-virtualization"		path="ivi/meta-virtualisation"/>
   <project remote="AGL" name="meta-agl" path="AG-Linux"/>
 
 </manifest>
