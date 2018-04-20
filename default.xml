@@ -36,7 +36,7 @@
            name="yocto/meta-qt5"
            path="oe-linux/meta-qt5"/>
   <!-- Linaro Git Recipes -->
-  <project remote="linaro" name="openembedded/meta-linaro" path="oe-linux/meta-linaro" revision="rocko"/ />
+  <project remote="linaro" name="openembedded/meta-linaro" path="oe-linux/meta-linaro" revision="rocko"/>
   <project remote="linaro" name="openembedded/meta-backports" path="oe-linux/meta-backports"/>
   <!-- Anstrom sourced Meta layers descriptions -->
   <project remote="oe"     name="meta-handheld" path="oe-linux/meta-handheld"/>
