@@ -59,14 +59,10 @@
   <project remote="github" name="linux4sam/meta-atmel" 			path="oe-linux/meta-atmel" revision="morty"/>
   <project remote="github" name="koenkooi/meta-dominion" 		path="oe-linux/meta-dominion" revision="rocko"/>
   <project remote="github" name="linux-sunxi/meta-sunxi" 		path="oe-linux/meta-sunxi" revision="cee0b74ce4f72710b594a5bdcc7e533f43f71bc9" upstream="master"/>
+
   <project remote="github" name="Angstrom-distribution/meta-angstrom"   path="oe-linux/meta-angstrom">
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
-  <!--
-  <project remote="ivi-repo" name="default"   path="oe-linux/meta-angstrom">
-      <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
-  </project>
-  -->
 
   <project remote="yocto" name="poky"                           path="oe-linux/poky" revision="rocko" />
   <project remote="yocto" name="meta-intel-iot-middleware"	path="oe-linux/meta-intel-iot-middleware"/>
