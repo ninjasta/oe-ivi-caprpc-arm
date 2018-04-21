@@ -6,7 +6,6 @@
   <!-- Remotes -->
   <remote fetch="git://git.openembedded.org"    	name="oe"/>
   <remote fetch="git://github.com"	             	name="github"/>
-  <remote fetch="git://git.yoctoproject.org" 		name="yocto"/>
   <remote fetch="https://gitlab.com" 			name="gitlab"/>
   <remote fetch="https://github.com" 			name="gitweb"/>
   <remote fetch="http://git.linaro.org" 		name="linaro"/>
@@ -15,6 +14,9 @@
   <remote fetch="https://git.automotivelinux.org/AGL" 	name="AGL"/>
   <remote fetch="https://git.automotivelinux.org/AGL" 	name="AGL"/>
   <remote fetch="git://code.qt.io/"            		name="code.qt"/>
+  <remote fetch="git://git.yoctoproject.org" 		name="yocto"/>
+  <!-- My GitHub IVI repo -->
+  <remote fetch="https://github.com/ninjasta/oe-ivi-carpc-arm.git" name="ivi-repo"/>
 
  <!-- Base stuff from Pelux -->
   <project remote="oe"
@@ -46,26 +48,30 @@
   <project remote="oe"     name="meta-opie"     path="oe-linux/meta-opie"/>
   <project remote="kc" 	   name="meta-nanopi.git"                       path="oe-linux/meta-nanopi"/>
 
-  <project remote="github" name="96boards/meta-96boards"                path="oe-linux/meta-96boards"/>
+  <project remote="github" name="96boards/meta-96boards"                path="oe-linux/meta-96boards" revision="rocko"/>
   <project remote="github" name="OverC/meta-qemuarma9"                  path="oe-linux/meta-qemuarma9"/>
-  <project remote="github" name="openembedded/openembedded-core" 	path="oe-linux/openembedded-core" revision="rocko"/>
+  <project remote="github" name="openembedded/openembedded-core" 	path="oe-linux/openembedded-core" revision="sumo"/>
   <project remote="github" name="openembedded/bitbake" 		 	path="bitbake" revision="1.36"/>
   <project remote="github" name="kraj/meta-altera" 		 	path="oe-linux/meta-altera"/>
   <project remote="github" name="OSSystems/meta-browser" 	 	path="oe-linux/meta-browser"/>
   <project remote="github" name="shr-distribution/meta-smartphone"	path="oe-linux/meta-smartphone"/>
   <project remote="github" name="Freescale/meta-freescale-3rdparty" 	path="oe-linux/meta-freescale-3rdparty"/>
   <project remote="github" name="linux4sam/meta-atmel" 			path="oe-linux/meta-atmel" revision="morty"/>
-  <project remote="github" name="koenkooi/meta-dominion" 		path="oe-linux/meta-dominion" />
+  <project remote="github" name="koenkooi/meta-dominion" 		path="oe-linux/meta-dominion" revision="rocko"/>
   <project remote="github" name="linux-sunxi/meta-sunxi" 		path="oe-linux/meta-sunxi" revision="cee0b74ce4f72710b594a5bdcc7e533f43f71bc9" upstream="master"/>
-  <project remote="github" name="agherzan/meta-raspberrypi" 		path="oe-linux/meta-raspberrypi"/>
   <project remote="github" name="Angstrom-distribution/meta-angstrom"   path="oe-linux/meta-angstrom">
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
+  <!--
+  <project remote="ivi-repo" name="default"   path="oe-linux/meta-angstrom">
+      <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
+  </project>
+  -->
 
   <project remote="yocto" name="poky"                           path="oe-linux/poky" revision="rocko" />
   <project remote="yocto" name="meta-intel-iot-middleware"	path="oe-linux/meta-intel-iot-middleware"/>
-  <project remote="yocto" name="meta-freescale" 		path="oe-linux/meta-freescale"/>
-  <project remote="yocto" name="meta-intel" 			path="oe-linux/meta-intel"/>
+  <project remote="yocto" name="meta-freescale" 		path="oe-linux/meta-freescale" revision="rocko"/>
+  <project remote="yocto" name="meta-intel" 			path="oe-linux/meta-intel" revision="rocko"/>
   <project remote="yocto" name="meta-xilinx" 			path="oe-linux/meta-xilinx"/>
   <project remote="yocto" name="meta-ti" 			path="oe-linux/meta-ti"/>
   <project remote="yocto" name="meta-amd" 			path="oe-linux/meta-amd"/>
@@ -73,7 +79,8 @@
   <project remote="yocto" name="meta-java" 			path="oe-linux/meta-java"/>
   <project remote="yocto" name="meta-maker" 			path="oe-linux/meta-maker"/>
   <project remote="yocto" name="meta-qt4" 			path="oe-linux/meta-qt4"/>
-  <project remote="yocto" name="meta-ivi" 			path="ivi/meta-ivi"/>
+  <project remote="github" name="GENIVI/meta-ivi" 		path="ivi/meta-ivi"/>
+  <project remote="yocto" name="meta-raspberrypi" 		path="oe-linux/meta-raspberrypi" revision="rocko"/>
   <project remote="yocto" name="meta-virtualization"		path="ivi/meta-virtualization"/>
   <project remote="AGL" name="meta-agl" path="AG-Linux" revsion="eel"/>
 
