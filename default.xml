@@ -51,12 +51,6 @@
            name="meta-virtualization"
            path="ivi/meta-virtualization"/>
 		   
-  <project remote="yocto" 
-  	   upstream="pyro"
-	   revision="8a0173487504676e2897575cab858ab4c0f1ca09"
-	   name="ivi/meta-virtualization"/>
-
-
   <!-- GENIVI stuff, update the upstream from master to 14.0 when possible-->
   <project remote="github"
            upstream="master"
@@ -113,7 +107,6 @@
   <project remote="github" name="01org/meta-intel-iot-security"     path="AG-Linux/meta-intel-iot-security" revision="20bbb97f6d5400b126ae96ef446c3e60c7e16285"/>
   <project remote="github" name="01org/meta-security-isafw"         path="AG-Linux/meta-security-isafw" revision="0fa0aff75ee21edd758a1baddc4522371a746f99" upstream="morty"/>
   <project remote="github" name="openembedded/openembedded-core"    path="oe-linux/openembedded-core"/>
-  <project remote="github" name="openembedded/meta-openembedded"    path="oe-linux/meta-openembedded"/>
   <project remote="github" name="openembedded/bitbake"              path="bitbake" revision="1.36" />
   <project remote="github" name="meta-rust/meta-rust"               path="AG-Linux/meta-rust" revision="94280a636c9a6dd729f9eb3ed88fe85b11ee8ffa" upstream="pyro"/>
   <project remote="github" name="phongt/meta-sdl"                   path="AG-Linux/meta-sdl" revision="d9451f4d2dd1a3927b0ce5e55a4f0dc9a3daee27"/>
