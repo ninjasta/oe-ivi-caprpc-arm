@@ -11,7 +11,7 @@
   <remote fetch="http://git.linaro.org" 		name="linaro"/>
   <remote fetch="http://git.shr-project.org" 		name="shr"/>
   <remote fetch="git://git.kernelconcepts.de" 		name="kc"/>
-  <remote fetch="https://git.automotivelinux.org/AGL" 	name="AGL"/>
+  <remote fetch="https://git.automotivelinux.org" 	name="agl"/>
   <remote fetch="git://code.qt.io/"            		name="code.qt"/>
   <remote fetch="git://git.yoctoproject.org" 		name="yocto"/>
 
@@ -19,11 +19,12 @@
   <remote fetch="https://github.com/ninjasta/oe-ivi-carpc-arm" name="my-ivi-repo"/>
 
  <!-- Base stuff from Pelux -->
+ <!--
   <project remote="oe"
            revision="rocko"
            name="meta-openembedded"
            path="oe-linux/meta-openembedded"/>
-
+ -->
   <project remote="github"
            revision="2c7899b9f71ce614a253d7875fe64e170159281a"
            name="Pelagicore/meta-bistro"
@@ -63,6 +64,7 @@
   <project name="advancedtelematic/meta-updater" path="oe-linux/meta-updater" remote="github" revision="090141edfc5883a2fe0ed1faece3ee2da957d115" upstream="pyro"/>
   <project name="boundarydevices/meta-boundary" path="oe-linux/meta-boundary" remote="github" revision="fb9bd92e4173ded438cd05f4c5c7f7d028d29cc7" upstream="pyro"/>
   <project name="kraj/meta-altera" path="oe-linux/meta-altera" remote="github" revision="d4bbb7ef016eab4ab04c3e794dfe6f4276196c66" upstream="master"/>
+
   <!-- from angstrom repo -->
   <project remote="github" name="Angstrom-distribution/meta-angstrom"   path="oe-linux/meta-angstrom">
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
@@ -82,13 +84,13 @@
   <!-- AG Linux -->
   <project name="meta-intel" path="oe-linux/meta-intel" remote="yocto" revision="4cd63f57820ce0e4ebd598251d3a13b5a4b9b791" upstream="pyro"/>
   <project name="meta-oic" path="oe-linux/oic" remote="yocto" revision="70d5bec59a3b8aabaa4a69f1d8513ff22d86b473" upstream="1.2.1"/>
-  <project name="meta-openembedded" remote="openembedded" revision="b2ce52334cf88e07f703cf25ced92302edd5b0e9" upstream="pyro"/>
-  <project name="meta-qcom" remote="yocto" revision="e27bc2054557df848f22b05674e51f289491723b" upstream="pyro"/>
+  <project name="meta-openembedded" path="oe-linux/meta-openembedded" remote="openembedded" revision="b2ce52334cf88e07f703cf25ced92302edd5b0e9" upstream="pyro"/>
+  <project name="meta-qcom" path="oe-linux/meta-qcom" remote="yocto" revision="e27bc2054557df848f22b05674e51f289491723b" upstream="pyro"/>
   <project name="meta-qt5/meta-qt5" path="oe-linux/meta-qt5" remote="github" revision="c6aa602d0640040b470ee81de39726276ddc0ea3" upstream="pyro"/>
   <project name="meta-raspberrypi" path="oe-linux/mets-rasberrypi" remote="yocto" revision="40447de4782d76f1e23e67ba05e272c27f6ec250" upstream="pyro"/>
-  <project name="meta-rust/meta-rust" path="meta-rust" remote="github" revision="94280a636c9a6dd729f9eb3ed88fe85b11ee8ffa" upstream="pyro"/>
-  <project name="meta-ti" remote="yocto" revision="230f5409bd47a850e718c81d485bb17b3d5ddcb0" upstream="master"/>
-  <project name="meta-virtualization" remote="yocto" revision="8a0173487504676e2897575cab858ab4c0f1ca09" upstream="pyro"/>
+  <project name="meta-rust/meta-rust" path="oe-linux/meta-rust" remote="github" revision="94280a636c9a6dd729f9eb3ed88fe85b11ee8ffa" upstream="pyro"/>
+  <project name="meta-ti" path="oe-linux/meta-ti" remote="yocto" revision="230f5409bd47a850e718c81d485bb17b3d5ddcb0" upstream="master"/>
+  <project name="meta-virtualization" path="ivi/meta-virtualization" remote="yocto" revision="8a0173487504676e2897575cab858ab4c0f1ca09" upstream="pyro"/>
   <project name="phongt/meta-sdl" path="oe-linux/meta-sdl" remote="github" revision="d9451f4d2dd1a3927b0ce5e55a4f0dc9a3daee27"/>
   <project name="poky" path="oe-linux/poky" remote="yocto" revision="022df4653576c72752156bef8fda0e1aa46733d2" upstream="pyro"/>
 
@@ -104,15 +106,6 @@
   <project name="AGL/meta-agl-extra" path="AG-Linux/meta-agl-extra" />
   <project name="AGL/meta-renesas" path="/AG-Linux/meta-renesas" />
   <project name="AGL/meta-renesas-rcar-gen3" path="AG-Linux/meta-renesas-rcar-gen3" />
-  <project name="meta-openembedded" remote="openembedded" revision="b2ce52334cf88e07f703cf25ced92302edd5b0e9" upstream="pyro"/>
-  <project name="meta-qcom" remote="yocto" revision="e27bc2054557df848f22b05674e51f289491723b" upstream="pyro"/>
-  <project name="meta-qt5/meta-qt5" path="meta-qt5" remote="github" revision="c6aa602d0640040b470ee81de39726276ddc0ea3" upstream="pyro"/>
-  <project name="meta-rust/meta-rust" path="meta-rust" remote="github" revision="94280a636c9a6dd729f9eb3ed88fe85b11ee8ffa" upstream="pyro"/>
-  <project name="meta-ti" remote="yocto" revision="230f5409bd47a850e718c81d485bb17b3d5ddcb0" upstream="master"/>
+  <project name="meta-openembedded" path="oe-linux/meta-openembedded" remote="openembedded" revision="b2ce52334cf88e07f703cf25ced92302edd5b0e9" upstream="pyro"/>
   
-  <project name="meta-virtualization" remote="yocto" revision="8a0173487504676e2897575cab858ab4c0f1ca09" upstream="pyro"/>
-  <!--
-  <project name="phongt/meta-sdl" path="meta-sdl" remote="github" revision="d9451f4d2dd1a3927b0ce5e55a4f0dc9a3daee27"/>
-  <project name="poky" remote="yocto" revision="022df4653576c72752156bef8fda0e1aa46733d2" upstream="pyro"/>
-  -->
 </manifest>
