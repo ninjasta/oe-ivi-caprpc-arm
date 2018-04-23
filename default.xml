@@ -128,9 +128,6 @@
          
   <project remote="yocto" name="meta-oic"            revision="70d5bec59a3b8aabaa4a69f1d8513ff22d86b473" upstream="1.2.1"/>
   <project remote="yocto" name="meta-qcom"           revision="e27bc2054557df848f22b05674e51f289491723b" upstream="pyro"/>           
-
-  <project remote="yocto" name="poky"                revision="022df4653576c72752156bef8fda0e1aa46733d2" upstream="pyro"/>
- 
   <project remote="yocto" name="meta-mono"           path="oe-linux/meta-mono"/>
   <project remote="yocto" name="meta-maker"          path="oe-linux/meta-maker"/>
   <project remote="yocto" name="meta-qt4"            path="oe-linux/meta-qt4"/>
