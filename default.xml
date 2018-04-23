@@ -19,12 +19,6 @@
   <remote fetch="https://github.com/ninjasta/oe-ivi-carpc-arm" name="my-ivi-repo"/>
 
  <!-- Base stuff from Pelux -->
- <!--
-  <project remote="oe"
-           revision="rocko"
-           name="meta-openembedded"
-           path="oe-linux/meta-openembedded"/>
- -->
   <project remote="github"
            revision="2c7899b9f71ce614a253d7875fe64e170159281a"
            name="Pelagicore/meta-bistro"
@@ -70,11 +64,9 @@
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
 
-  <!-- <project remote="yocto" name="poky"                           path="oe-linux/poky" revsion="rocko"/> -->
   <project remote="yocto" name="meta-intel-iot-middleware"	path="oe-linux/meta-intel-iot-middleware"/>
-  <!--  <project remote="yocto" name="meta-intel" 			path="oe-linux/meta-intel"/> -->
   <project remote="yocto" name="meta-xilinx" 			path="oe-linux/meta-xilinx"/>
-  <!-- <project remote="yocto" name="meta-ti" 			path="oe-linux/meta-ti"/> -->
+
   <project remote="yocto" name="meta-mono" 			path="oe-linux/meta-mono"/>
   <project remote="yocto" name="meta-java" 			path="oe-linux/meta-java"/>
   <project remote="yocto" name="meta-maker" 			path="oe-linux/meta-maker"/>
