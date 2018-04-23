@@ -14,6 +14,7 @@
   <remote fetch="https://git.automotivelinux.org" 	name="agl"/>
   <remote fetch="git://code.qt.io/"            		name="code.qt"/>
   <remote fetch="git://git.yoctoproject.org" 		name="yocto"/>
+  <default remote="agl" revision="refs/tags/eel/5.0.2" sync-j="4"/>
 
   <!-- My GitHub IVI repo -->
   <remote fetch="https://github.com/ninjasta/oe-ivi-carpc-arm" name="my-ivi-repo"/>
@@ -84,30 +85,36 @@
            remote="yocto"
            revision="4cd63f57820ce0e4ebd598251d3a13b5a4b9b791"
            upstream="pyro"/>
+
   <project name="meta-oic"
            path="oe-linux/oic"
            remote="yocto"
            revision="70d5bec59a3b8aabaa4a69f1d8513ff22d86b473"
            upstream="1.2.1"/>
+
   <project name="meta-openembedded"
            path="oe-linux/meta-openembedded"
            remote="openembedded"
            revision="b2ce52334cf88e07f703cf25ced92302edd5b0e9"
            upstream="pyro"/>
+
   <project name="meta-qcom"
            path="oe-linux/meta-qcom" remote="yocto"
            revision="e27bc2054557df848f22b05674e51f289491723b"
            upstream="pyro"/>
+
   <project name="meta-raspberrypi"
            path="oe-linux/mets-rasberrypi"
            remote="yocto"
            revision="40447de4782d76f1e23e67ba05e272c27f6ec250"
            upstream="pyro"/>
+
   <project name="meta-rust/meta-rust"
            path="oe-linux/meta-rust"
            remote="github"
            revision="94280a636c9a6dd729f9eb3ed88fe85b11ee8ffa"
            upstream="pyro"/>
+
   <project name="meta-ti"
            path="oe-linux/meta-ti"
            remote="yocto" 
@@ -120,26 +127,30 @@
            path="oe-linux/meta-sdl"
            remote="github"
            revision="d9451f4d2dd1a3927b0ce5e55a4f0dc9a3daee27"/>
+
   <project name="poky"
            path="oe-linux/poky"
            remote="yocto"
            revision="022df4653576c72752156bef8fda0e1aa46733d2"
            upstream="pyro"/>
 
-  <!-- Automotive Linux repo -->
-  <default remote="agl" revision="refs/tags/eel/5.0.2" sync-j="4"/>
   
   <project name="01org/meta-intel-iot-security" path="oe-linux/meta-intel-iot-security"
            remote="github" revision="20bbb97f6d5400b126ae96ef446c3e60c7e16285"/>
   <project name="01org/meta-security-isafw"     path="oe-linux/meta-security-isafw"
            remote="github" revision="0fa0aff75ee21edd758a1baddc4522371a746f99" upstream="morty"/>
-  <project name="AGL/meta-agl"                  path="AG-Linux/meta-agl" />
-  <project name="AGL/meta-agl-demo"             path="AG-Linux/meta-agl-demo" />
-  <project name="AGL/meta-agl-devel"            path="AG-Linux/meta-agl-devel" />
-  <project name="AGL/meta-agl-extra"            path="AG-Linux/meta-agl-extra" />
-  <project name="AGL/meta-renesas"              path="AG-Linux/meta-renesas" />
-  <project name="AGL/meta-renesas-rcar-gen3"    path="AG-Linux/meta-renesas-rcar-gen3" />
-  <project name="meta-openembedded"             path="oe-linux/meta-openembedded"
-           remote="oe" revision="b2ce52334cf88e07f703cf25ced92302edd5b0e9" upstream="pyro"/>
+  <!-- Automotive Linux repo -->
+
+  <project remote="agl" name="AGL/meta-agl"                  path="AG-Linux/meta-agl" />
+  <project remote="agl" name="AGL/meta-agl-demo"             path="AG-Linux/meta-agl-demo" />
+  <project remote="agl" name="AGL/meta-agl-devel"            path="AG-Linux/meta-agl-devel" />
+  <project remote="agl" name="AGL/meta-agl-extra"            path="AG-Linux/meta-agl-extra" />
+  <project remote="agl" name="AGL/meta-renesas"              path="AG-Linux/meta-renesas" />
+  <project remote="agl" name="AGL/meta-renesas-rcar-gen3"    path="AG-Linux/meta-renesas-rcar-gen3" />
+  <project name="meta-openembedded"
+           remote="oe"
+           path="oe-linux/meta-openembedded"
+	   revision="b2ce52334cf88e07f703cf25ced92302edd5b0e9"
+	   upstream="pyro"/>
   
 </manifest>
