@@ -62,7 +62,7 @@
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
 
-  <project remote="github" name="meta-yocto"                    path="oe-linux/poky" revision="rocko" />
+  <project remote="github" name="meta-yocto"                    path="oe-linux/poky"/>
   <project remote="yocto" name="meta-intel-iot-middleware"	path="oe-linux/meta-intel-iot-middleware"/>
   <project remote="yocto" name="meta-intel" 			path="oe-linux/meta-intel"/>
   <project remote="yocto" name="meta-xilinx" 			path="oe-linux/meta-xilinx"/>
