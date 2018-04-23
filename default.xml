@@ -78,7 +78,6 @@
   <project name="meta-oic" path="oe-linux/oic" remote="yocto" revision="70d5bec59a3b8aabaa4a69f1d8513ff22d86b473" upstream="1.2.1"/>
   <project name="meta-openembedded" path="oe-linux/meta-openembedded" remote="openembedded" revision="b2ce52334cf88e07f703cf25ced92302edd5b0e9" upstream="pyro"/>
   <project name="meta-qcom" path="oe-linux/meta-qcom" remote="yocto" revision="e27bc2054557df848f22b05674e51f289491723b" upstream="pyro"/>
-  <project name="meta-qt5/meta-qt5" path="oe-linux/meta-qt5" remote="github" revision="c6aa602d0640040b470ee81de39726276ddc0ea3" upstream="pyro"/>
   <project name="meta-raspberrypi" path="oe-linux/mets-rasberrypi" remote="yocto" revision="40447de4782d76f1e23e67ba05e272c27f6ec250" upstream="pyro"/>
   <project name="meta-rust/meta-rust" path="oe-linux/meta-rust" remote="github" revision="94280a636c9a6dd729f9eb3ed88fe85b11ee8ffa" upstream="pyro"/>
   <project name="meta-ti" path="oe-linux/meta-ti" remote="yocto" revision="230f5409bd47a850e718c81d485bb17b3d5ddcb0" upstream="master"/>
