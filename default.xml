@@ -41,7 +41,7 @@
            path="oe-linux/meta-qt5"/>
 
   <!-- Linaro Git Recipes -->
-  <project remote="linaro" name="openembedded/meta-linaro" path="oe-linux/meta-linaro" revision="rocko"/>
+  <project remote="linaro" name="openembedded/meta-linaro" path="oe-linux/meta-linaro"/>
   <project remote="linaro" name="openembedded/meta-backports" path="oe-linux/meta-backports"/>
   <!-- Anstrom sourced Meta layers descriptions -->
   <project remote="oe"     name="meta-handheld" path="oe-linux/meta-handheld"/>
@@ -55,7 +55,6 @@
   <project remote="github" name="kraj/meta-altera" 		 	path="oe-linux/meta-altera"/>
   <project remote="github" name="OSSystems/meta-browser" 	 	path="oe-linux/meta-browser"/>
   <project remote="github" name="shr-distribution/meta-smartphone"	path="oe-linux/meta-smartphone"/>
-  <project remote="github" name="Freescale/meta-freescale-3rdparty" 	path="oe-linux/meta-freescale-3rdparty"/>
   <project remote="github" name="linux4sam/meta-atmel" 			path="oe-linux/meta-atmel" revision="morty"/>
   <project remote="github" name="linux-sunxi/meta-sunxi" 		path="oe-linux/meta-sunxi" revision="cee0b74ce4f72710b594a5bdcc7e533f43f71bc9" upstream="master"/>
   <project remote="github" name="agherzan/meta-raspberrypi" path="layers/meta-raspberrypi"/>
@@ -66,8 +65,7 @@
 
   <project remote="yocto" name="poky"                           path="oe-linux/poky" revision="rocko" />
   <project remote="yocto" name="meta-intel-iot-middleware"	path="oe-linux/meta-intel-iot-middleware"/>
-  <project remote="yocto" name="meta-freescale" 		path="oe-linux/meta-freescale" revision="rocko"/>
-  <project remote="yocto" name="meta-intel" 			path="oe-linux/meta-intel" revision="rocko"/>
+  <project remote="yocto" name="meta-intel" 			path="oe-linux/meta-intel"/>
   <project remote="yocto" name="meta-xilinx" 			path="oe-linux/meta-xilinx"/>
   <project remote="yocto" name="meta-ti" 			path="oe-linux/meta-ti"/>
   <project remote="yocto" name="meta-amd" 			path="oe-linux/meta-amd"/>
