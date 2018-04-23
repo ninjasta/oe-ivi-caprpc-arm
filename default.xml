@@ -1,156 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- settings -->
-  <default revision="master" sync-j="4"/>
+
+  <!-- Settings -->
+  <default revision="rocko" sync-j="4"/>
 
   <!-- Remotes -->
-  <remote fetch="git://git.openembedded.org"    	name="oe"/>
-  <remote fetch="git://github.com"	             	name="github"/>
-  <remote fetch="https://gitlab.com" 			name="gitlab"/>
-  <remote fetch="https://github.com" 			name="gitweb"/>
-  <remote fetch="http://git.linaro.org" 		name="linaro"/>
-  <remote fetch="http://git.shr-project.org" 		name="shr"/>
-  <remote fetch="git://git.kernelconcepts.de" 		name="kc"/>
-  <remote fetch="https://git.automotivelinux.org" 	name="agl"/>
-  <remote fetch="git://code.qt.io/"            		name="code.qt"/>
-  <remote fetch="git://git.yoctoproject.org" 		name="yocto"/>
+  <remote fetch="git://git.openembedded.org"      name="oe"/>
+  <remote fetch="git://git.yoctoproject.org"      name="yocto"/>
+  <remote fetch="git://github.com/"               name="github"/>
+  <remote fetch="http://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="http://git.linaro.org"           name="linaro"/>
+  <remote fetch="http://git.shr-project.org"      name="shr"/>
+  <remote fetch="git://code.qt.io/"               name="qt.io"/>
+  <remote fetch="git://git.yoctoproject.org/"     name="yocto"/>
+  <remote fetch="https://gerrit.automotivelinux.org/gerrit/" name="agl"/>
   <default remote="agl" revision="refs/tags/eel/5.0.2" sync-j="4"/>
+  
+  <!-- Base stuff -->
+  <project remote="oe"
+           upstream="rocko"
+           revision="dacfa2b1920e285531bec55cd2f08743390aaf57"
+           name="meta-openembedded"
+           path="oe-linux/meta-openembedded"/>
 
-  <!-- My GitHub IVI repo -->
-  <remote fetch="https://github.com/ninjasta/oe-ivi-carpc-arm" name="my-ivi-repo"/>
-
- <!-- Base stuff from Pelux -->
+  <project remote="yocto"
+           upstream="rocko"
+           revision="6b744113ad3e564d1cb05411816b103d99fd84dc"
+           name="poky"
+           path="poky"/>
 
   <project remote="github"
-           revision="2c7899b9f71ce614a253d7875fe64e170159281a"
+           upstream="master"
+           revision="1588619f627ef1bf40f9b93660c0f05a96a69cb9"
            name="Pelagicore/meta-bistro"
-           path="ivi/sources/meta-bistro" />
+           path="ivi/meta-bistro" />
 
   <project remote="github"
-           revision="4861f6d58042909e6c79cb301c6eb39c349011bf"
+           revision="440929d4d135d8e0276076e5b2b67dc6e19b7be7"
+           upstream="master"
            name="Pelagicore/meta-pelux"
-           path="ivi/sources/meta-pelux" />
+           path="ivi/meta-pelux" />
 
-  <!-- Qt Support stuff -->
+  <project remote="github"
+           revision="00ff53a574bf03bed29d80945f5e589879d3e2b2"
+           upstream="rocko"
+           name="sbabic/meta-swupdate"
+           path="ivi/meta-swupdate" />
 
-  <project remote="code.qt"
-           revision="c6aa602d0640040b470ee81de39726276ddc0ea3"
+  <project remote="yocto"
+           upstream="rocko"
+           revision="bd77388f31929f38e7d4cc9c711f0f83f563007e"
+           name="meta-virtualization"
+           path="ivi/meta-virtualization"/>
+		   
+  <project remote="yocto" 
+  	   upstream="pyro"
+	   revision="8a0173487504676e2897575cab858ab4c0f1ca09"
+	   name="ivi/meta-virtualization"/>
+
+
+  <!-- GENIVI stuff, update the upstream from master to 14.0 when possible-->
+  <project remote="github"
+           upstream="master"
+           revision="5243d83ac2ef13d117065edae8e4f484e7e4f373"
+           name="GENIVI/meta-ivi"
+           path="ivi/meta-ivi" />
+
+  <!-- Qt + Qt Automotive support stuff -->
+  <project remote="qt.io"
+           upstream="5.10"
+           revision="bc0625e7a03f9f04fdae3a89137812a216e977cd"
            name="yocto/meta-qt5"
            path="oe-linux/meta-qt5"/>
 
-  <!-- Linaro Git Recipes -->
-  <project remote="linaro" name="openembedded/meta-linaro"    path="oe-linux/meta-linaro" revision="rocko"/>
-  <project remote="linaro" name="openembedded/meta-backports" path="oe-linux/meta-backports"/>
-  <!-- Anstrom sourced Meta layers descriptions -->
-  <project remote="oe"     name="meta-handheld" path="oe-linux/meta-handheld"/>
-  <project remote="oe"     name="meta-opie"     path="oe-linux/meta-opie"/>
-  <project remote="kc" 	   name="meta-nanopi"   path="oe-linux/meta-nanopi"/>
+  <!-- Boot2QT has no rocko branch -->
+  <project remote="qt.io"
+           upstream="pyro"
+           revision="8513b63910eb9046c79ab3fb3df02a4e665f05b5"
+           name="yocto/meta-boot2qt"
+           path="oe-linux/meta-boot2qt"/>
 
-  <project remote="github" name="96boards/meta-96boards"                path="oe-linux/meta-96boards" revision="rocko"/>
-  <project remote="github" name="OverC/meta-qemuarma9"                  path="oe-linux/meta-qemuarma9"/>
-  <project remote="github" name="openembedded/bitbake" 		 	path="bitbake" revision="1.36"/>
-  <project remote="github" name="OSSystems/meta-browser" 	 	path="oe-linux/meta-browser"/>
-  <project remote="github" name="linux4sam/meta-atmel" 			path="oe-linux/meta-atmel" revision="morty"/>
-  <project remote="github" name="linux-sunxi/meta-sunxi" 		path="oe-linux/meta-sunxi" revision="cee0b74ce4f72710b594a5bdcc7e533f43f71bc9" upstream="master"/>
-  <!-- from AG Linux eel manifest -->
-  <project name="Freescale/meta-freescale"          path="oe-linux/meta-freescale" remote="github" 
-           revision="06178400afbd641a6709473fd21d893dcd3cfbfa" upstream="pyro"/>
-  <project name="Freescale/meta-freescale-3rdparty" path="oe-linux/meta-freescale-3rdparty" remote="github"
-           revision="35badbde05d4f10d4faeefc30bc126b5bd228e2e" upstream="pyro"/>
-  <project name="Freescale/meta-freescale-distro"   path="oe-linux/meta-freescale-distro"
-           remote="github" revision="cd5c7a2539f40004f74126e9fdf08254fd9a6390" upstream="pyro"/>
-  <project name="advancedtelematic/meta-updater"    path="oe-linux/meta-updater" remote="github"
-           revision="090141edfc5883a2fe0ed1faece3ee2da957d115" upstream="pyro"/>
-  <project name="boundarydevices/meta-boundary" path="oe-linux/meta-boundary" remote="github"
-           revision="fb9bd92e4173ded438cd05f4c5c7f7d028d29cc7" upstream="pyro"/>
-  <project name="kraj/meta-altera" path="oe-linux/meta-altera" remote="github"
-           revision="d4bbb7ef016eab4ab04c3e794dfe6f4276196c66" upstream="master"/>
+  <!-- Template layer stuff -->
+  <project remote="github"
+           upstream="rocko"
+           revision="2841810fe46089dd064f14b0327ce36065feb4dd"
+           name="Pelagicore/meta-template"
+           path="oe-linux/meta-template"/>
 
-  <!-- from angstrom repo -->
-  <project remote="github" name="Angstrom-distribution/meta-angstrom"   path="oe-linux/meta-angstrom">
+  <!-- BSP layers for Intel and rPi -->
+  <project remote="yocto"
+           upstream="rocko"
+           revision="92d66730fba1fdc71d2548332c8ff57160e31b05"
+           name="meta-intel"
+           path="oe-linux/meta-intel"/>
+
+<!--	   
+  <project remote="yocto"
+		   upstream="pyro"
+		   revision="4cd63f57820ce0e4ebd598251d3a13b5a4b9b791"
+		   name="meta-intel"
+		   path="oe-linux/meta-intel" />
+-->
+
+  <project remote="yocto"
+           upstream="rocko"
+           revision="b58ccfc696e4fa6b680ae5ca79960312676d7af9"
+           name="meta-raspberrypi"
+           path="oe-linux/meta-raspberrypi"/>
+<!--		   
+  <project remote="yocto"
+  		   upstream="pyro"
+		   revision="40447de4782d76f1e23e67ba05e272c27f6ec250" 
+		   name="meta-raspberrypi"
+		   path="oe-linux/meta-raspberrypi" />
+-->
+  
+  <project remote="agl" name="AGL/meta-agl"               path="AG-Linux/meta-agl"/>
+  <project remote="agl" name="AGL/meta-agl-demo"          path="AG-Linux/meta-agl-demo"/>
+  <project remote="agl" name="AGL/meta-agl-devel"         path="AG-Linux/meta-agl-devel"/>
+  <project remote="agl" name="AGL/meta-agl-extra"         path="AG-Linux/meta-agl-extra"/>
+  <project remote="agl" name="AGL/meta-renesas"           path="AG-Linux/meta-renesas"/>
+  <project remote="agl" name="AGL/meta-renesas-rcar-gen3" path="AG-Linux/meta-renesas-rcar-gen3"/>
+
+  <project remote="oe" name="meta-openembedded" revision="b2ce52334cf88e07f703cf25ced92302edd5b0e9" upstream="pyro"/>
+
+  <project remote="linaro" name="openembedded/meta-linaro"          path="oe-linux/meta-linaro"/>
+  <project remote="linaro" name="openembedded/meta-backports"       path="oe-linux/meta-backports"/>
+  
+  <project remote="github" name="01org/meta-intel-iot-security"     path="AG-Linux/meta-intel-iot-security" revision="20bbb97f6d5400b126ae96ef446c3e60c7e16285"/>
+  <project remote="github" name="01org/meta-security-isafw"         path="AG-Linux/meta-security-isafw" revision="0fa0aff75ee21edd758a1baddc4522371a746f99" upstream="morty"/>
+  <project remote="github" name="openembedded/openembedded-core"    path="oe-linux/openembedded-core"/>
+  <project remote="github" name="openembedded/meta-openembedded"    path="oe-linux/meta-openembedded"/>
+  <project remote="github" name="openembedded/bitbake"              path="bitbake" revision="1.36" />
+  <project remote="github" name="meta-rust/meta-rust"               path="AG-Linux/meta-rust" revision="94280a636c9a6dd729f9eb3ed88fe85b11ee8ffa" upstream="pyro"/>
+  <project remote="github" name="phongt/meta-sdl"                   path="AG-Linux/meta-sdl" revision="d9451f4d2dd1a3927b0ce5e55a4f0dc9a3daee27"/>
+  <project remote="github" name="meta-qt5/meta-qt5"                 path="AG-Linux/meta-qt5" revision="c6aa602d0640040b470ee81de39726276ddc0ea3" upstream="pyro"/>
+  <project remote="github" name="shr-distribution/meta-smartphone"  path="oe-linux/meta-smartphone"/>
+  <project remote="github" name="96boards/meta-96boards"            path="oe-linux/meta-96boards"/>
+  <project remote="github" name="linux4sam/meta-atmel"              path="oe-linux/meta-atmel" revision="morty"/>
+  <project remote="github" name="koenkooi/meta-dominion"            path="oe-linux/meta-dominion"/>
+  <project remote="github" name="Freescale/meta-freescale"          path="AG-Linux/meta-freescale"  revision="06178400afbd641a6709473fd21d893dcd3cfbfa" upstream="pyro"/>
+  <project remote="github" name="Freescale/meta-freescale-3rdparty" path="AG-Linux/meta-freescale-3rdparty" revision="35badbde05d4f10d4faeefc30bc126b5bd228e2e" upstream="pyro"/>
+  <project remote="github" name="Freescale/meta-freescale-distro"   path="AG-Linux/meta-freescale-distro"  revision="cd5c7a2539f40004f74126e9fdf08254fd9a6390" upstream="pyro"/>
+  <project remote="github" name="advancedtelematic/meta-updater"    path="AG-Linux/meta-updater" revision="090141edfc5883a2fe0ed1faece3ee2da957d115" upstream="pyro"/>
+  <project remote="github" name="boundarydevices/meta-boundary"     path="AG-Linux/meta-boundary" revision="fb9bd92e4173ded438cd05f4c5c7f7d028d29cc7" upstream="pyro"/>
+  <project remote="github" name="kraj/meta-altera"                  path="AG-Linux/meta-altera" revision="d4bbb7ef016eab4ab04c3e794dfe6f4276196c66" upstream="master"/>
+  <project remote="github" name="linux-sunxi/meta-sunxi"            path="oe-linux/meta-sunxi" revision="cee0b74ce4f72710b594a5bdcc7e533f43f71bc9" upstream="master"/>
+  <project remote="github" name="OSSystems/meta-browser"            path="oe-linux/meta-browser" revision="4dda3fb94072a515763d816e15855d7fdf210a25" upstream="master"/>
+
+  <project remote="github" name="Angstrom-distribution/meta-angstrom" path="oe-linux/meta-angstrom" revision="angstrom-v2017.12-rocko" >
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
+         
+  <project remote="yocto" name="meta-oic"            revision="70d5bec59a3b8aabaa4a69f1d8513ff22d86b473" upstream="1.2.1"/>
+  <project remote="yocto" name="meta-qcom"           revision="e27bc2054557df848f22b05674e51f289491723b" upstream="pyro"/>           
 
-  <project remote="yocto" name="meta-intel-iot-middleware"	path="oe-linux/meta-intel-iot-middleware"/>
-  <project remote="yocto" name="meta-xilinx" 			path="oe-linux/meta-xilinx"/>
-  <project remote="yocto" name="meta-mono" 			path="oe-linux/meta-mono"/>
-  <project remote="yocto" name="meta-java" 			path="oe-linux/meta-java"/>
-  <project remote="yocto" name="meta-maker" 			path="oe-linux/meta-maker"/>
-  <project remote="yocto" name="meta-qt4" 			path="oe-linux/meta-qt4"/>
-  <project remote="github" name="GENIVI/meta-ivi" 		path="ivi/meta-ivi"/>
+  <project remote="yocto" name="poky"                revision="022df4653576c72752156bef8fda0e1aa46733d2" upstream="pyro"/>
+ 
+  <project remote="yocto" name="meta-mono"           path="oe-linux/meta-mono"/>
+  <project remote="yocto" name="meta-maker"          path="oe-linux/meta-maker"/>
+  <project remote="yocto" name="meta-qt4"            path="oe-linux/meta-qt4"/>
+  <project remote="yocto" name="meta-ti"             path="oe-linux/meta-ti" revision="230f5409bd47a850e718c81d485bb17b3d5ddcb0" upstream="master"/>
+  <project remote="yocto" name="meta-xilinx"         path="oe-linux/meta-xilinx" revision="6ddc5873b0ede30e6542f0ab151a6236acc37944" upstream="master"/>
+  <project remote="yocto" name="meta-java"           path="oe-linux/meta-java" revision="03e35bf64f97980652ac532cca0ea96e730a551c" upstream="master"/>
 
-  <!-- AG Linux -->
-  <project name="meta-intel"        
-           path="oe-linux/meta-intel"
-           remote="yocto"
-           revision="4cd63f57820ce0e4ebd598251d3a13b5a4b9b791"
-           upstream="pyro"/>
-
-  <project name="meta-oic"
-           path="oe-linux/oic"
-           remote="yocto"
-           revision="70d5bec59a3b8aabaa4a69f1d8513ff22d86b473"
-           upstream="1.2.1"/>
-
-  <project name="meta-openembedded"
-           path="oe-linux/meta-openembedded"
-           remote="openembedded"
-           revision="b2ce52334cf88e07f703cf25ced92302edd5b0e9"
-           upstream="pyro"/>
-
-  <project name="meta-qcom"
-           path="oe-linux/meta-qcom" remote="yocto"
-           revision="e27bc2054557df848f22b05674e51f289491723b"
-           upstream="pyro"/>
-
-  <project name="meta-raspberrypi"
-           path="oe-linux/mets-rasberrypi"
-           remote="yocto"
-           revision="40447de4782d76f1e23e67ba05e272c27f6ec250"
-           upstream="pyro"/>
-
-  <project name="meta-rust/meta-rust"
-           path="oe-linux/meta-rust"
-           remote="github"
-           revision="94280a636c9a6dd729f9eb3ed88fe85b11ee8ffa"
-           upstream="pyro"/>
-
-  <project name="meta-ti"
-           path="oe-linux/meta-ti"
-           remote="yocto" 
-           revision="230f5409bd47a850e718c81d485bb17b3d5ddcb0"
-           upstream="master"/>
-  <project name="meta-virtualization"
-           path="ivi/meta-virtualization"
-           remote="yocto" revision="8a0173487504676e2897575cab858ab4c0f1ca09" upstream="pyro"/>
-  <project name="phongt/meta-sdl"
-           path="oe-linux/meta-sdl"
-           remote="github"
-           revision="d9451f4d2dd1a3927b0ce5e55a4f0dc9a3daee27"/>
-
-  <project name="poky"
-           path="oe-linux/poky"
-           remote="yocto"
-           revision="022df4653576c72752156bef8fda0e1aa46733d2"
-           upstream="pyro"/>
-
-  
-  <project name="01org/meta-intel-iot-security" path="oe-linux/meta-intel-iot-security"
-           remote="github" revision="20bbb97f6d5400b126ae96ef446c3e60c7e16285"/>
-  <project name="01org/meta-security-isafw"     path="oe-linux/meta-security-isafw"
-           remote="github" revision="0fa0aff75ee21edd758a1baddc4522371a746f99" upstream="morty"/>
-  <!-- Automotive Linux repo -->
-
-  <project remote="agl" name="AGL/meta-agl"                  path="AG-Linux/meta-agl" />
-  <project remote="agl" name="AGL/meta-agl-demo"             path="AG-Linux/meta-agl-demo" />
-  <project remote="agl" name="AGL/meta-agl-devel"            path="AG-Linux/meta-agl-devel" />
-  <project remote="agl" name="AGL/meta-agl-extra"            path="AG-Linux/meta-agl-extra" />
-  <project remote="agl" name="AGL/meta-renesas"              path="AG-Linux/meta-renesas" />
-  <project remote="agl" name="AGL/meta-renesas-rcar-gen3"    path="AG-Linux/meta-renesas-rcar-gen3" />
-  <project name="meta-openembedded"
-           remote="oe"
-           path="oe-linux/meta-openembedded"
-	   revision="b2ce52334cf88e07f703cf25ced92302edd5b0e9"
-	   upstream="pyro"/>
-  
 </manifest>
