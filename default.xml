@@ -99,8 +99,6 @@
   <project remote="agl" name="AGL/meta-renesas"           path="AG-Linux/meta-renesas"/>
   <project remote="agl" name="AGL/meta-renesas-rcar-gen3" path="AG-Linux/meta-renesas-rcar-gen3"/>
 
-  <project remote="oe" name="meta-openembedded" revision="b2ce52334cf88e07f703cf25ced92302edd5b0e9" upstream="pyro"/>
-
   <project remote="linaro" name="openembedded/meta-linaro"          path="oe-linux/meta-linaro"/>
   <project remote="linaro" name="openembedded/meta-backports"       path="oe-linux/meta-backports"/>
   
