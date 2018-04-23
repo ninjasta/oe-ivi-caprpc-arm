@@ -20,7 +20,7 @@
 
  <!-- Base stuff from Pelux -->
   <project remote="oe"
-           revision="5e82995148a2844c6f483ae5ddd1438d87ea9fb7"
+           revision="rocko"
            name="meta-openembedded"
            path="oe-linux/meta-openembedded"/>
 
@@ -41,7 +41,7 @@
            path="oe-linux/meta-qt5"/>
 
   <!-- Linaro Git Recipes -->
-  <project remote="linaro" name="openembedded/meta-linaro" path="oe-linux/meta-linaro"/>
+  <project remote="linaro" name="openembedded/meta-linaro" path="oe-linux/meta-linaro" revision="rocko"/>
   <project remote="linaro" name="openembedded/meta-backports" path="oe-linux/meta-backports"/>
   <!-- Anstrom sourced Meta layers descriptions -->
   <project remote="oe"     name="meta-handheld" path="oe-linux/meta-handheld"/>
@@ -62,7 +62,7 @@
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
 
-  <project remote="yocto" name="poky"                           path="oe-linux/poky" revision="rocko" />
+  <project remote="github" name="meta-yocto"                    path="oe-linux/poky" revision="rocko" />
   <project remote="yocto" name="meta-intel-iot-middleware"	path="oe-linux/meta-intel-iot-middleware"/>
   <project remote="yocto" name="meta-intel" 			path="oe-linux/meta-intel"/>
   <project remote="yocto" name="meta-xilinx" 			path="oe-linux/meta-xilinx"/>
