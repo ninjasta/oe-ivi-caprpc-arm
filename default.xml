@@ -48,7 +48,7 @@
   <project remote="oe"     name="meta-opie"     path="oe-linux/meta-opie"/>
   <project remote="kc" 	   name="meta-nanopi.git"                       path="oe-linux/meta-nanopi"/>
 
-  <project remote="github" name="96boards/meta-96boards"                path="oe-linux/meta-96boards" revision="rocko"/>
+  <project remote="github" name="96boards/meta-96boards"                path="oe-linux/meta-96boards"/>
   <project remote="github" name="OverC/meta-qemuarma9"                  path="oe-linux/meta-qemuarma9"/>
   <project remote="github" name="openembedded/openembedded-core" 	path="oe-linux/openembedded-core" revision="rocko"/>
   <project remote="github" name="openembedded/bitbake" 		 	path="bitbake" revision="1.36"/>
@@ -59,6 +59,7 @@
   <project remote="github" name="linux4sam/meta-atmel" 			path="oe-linux/meta-atmel" revision="morty"/>
   <project remote="github" name="koenkooi/meta-dominion" 		path="oe-linux/meta-dominion" revision="rocko"/>
   <project remote="github" name="linux-sunxi/meta-sunxi" 		path="oe-linux/meta-sunxi" revision="cee0b74ce4f72710b594a5bdcc7e533f43f71bc9" upstream="master"/>
+  <project remote="github" name="agherzan/meta-raspberrypi" path="layers/meta-raspberrypi"/>
 
   <project remote="github" name="Angstrom-distribution/meta-angstrom"   path="oe-linux/meta-angstrom">
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
@@ -76,8 +77,8 @@
   <project remote="yocto" name="meta-maker" 			path="oe-linux/meta-maker"/>
   <project remote="yocto" name="meta-qt4" 			path="oe-linux/meta-qt4"/>
   <project remote="github" name="GENIVI/meta-ivi" 		path="ivi/meta-ivi"/>
-  <project remote="yocto" name="meta-raspberrypi" 		path="oe-linux/meta-raspberrypi" revision="rocko"/>
   <project remote="yocto" name="meta-virtualization"		path="ivi/meta-virtualization"/>
+  <!-- Automotive Linux repo -->
   <project remote="AGL" name="meta-agl" path="AG-Linux" revsion="eel"/>
 
 </manifest>
