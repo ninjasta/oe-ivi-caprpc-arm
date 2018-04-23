@@ -77,7 +77,7 @@
            upstream="rocko"
            revision="2841810fe46089dd064f14b0327ce36065feb4dd"
            name="Pelagicore/meta-template"
-           path="oe-linux/meta-template"/>
+           path="ivi/meta-template"/>
 
   <!-- BSP layers for Intel and rPi -->
   <project remote="yocto"
@@ -108,7 +108,6 @@
   <project remote="github" name="openembedded/bitbake"              path="bitbake" revision="1.36" />
   <project remote="github" name="meta-rust/meta-rust"               path="AG-Linux/meta-rust" revision="94280a636c9a6dd729f9eb3ed88fe85b11ee8ffa" upstream="pyro"/>
   <project remote="github" name="phongt/meta-sdl"                   path="AG-Linux/meta-sdl" revision="d9451f4d2dd1a3927b0ce5e55a4f0dc9a3daee27"/>
-  <project remote="github" name="meta-qt5/meta-qt5"                 path="AG-Linux/meta-qt5" revision="c6aa602d0640040b470ee81de39726276ddc0ea3" upstream="pyro"/>
   <project remote="github" name="shr-distribution/meta-smartphone"  path="oe-linux/meta-smartphone"/>
   <project remote="github" name="96boards/meta-96boards"            path="oe-linux/meta-96boards"/>
   <project remote="github" name="linux4sam/meta-atmel"              path="oe-linux/meta-atmel" revision="morty"/>
