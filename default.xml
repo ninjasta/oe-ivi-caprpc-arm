@@ -19,6 +19,7 @@
   <remote fetch="https://github.com/ninjasta/oe-ivi-carpc-arm" name="my-ivi-repo"/>
 
  <!-- Base stuff from Pelux -->
+
   <project remote="github"
            revision="2c7899b9f71ce614a253d7875fe64e170159281a"
            name="Pelagicore/meta-bistro"
@@ -30,6 +31,7 @@
            path="ivi/sources/meta-pelux" />
 
   <!-- Qt Support stuff -->
+
   <project remote="code.qt"
            revision="c6aa602d0640040b470ee81de39726276ddc0ea3"
            name="yocto/meta-qt5"
@@ -64,7 +66,6 @@
 
   <project remote="yocto" name="meta-intel-iot-middleware"	path="oe-linux/meta-intel-iot-middleware"/>
   <project remote="yocto" name="meta-xilinx" 			path="oe-linux/meta-xilinx"/>
-
   <project remote="yocto" name="meta-mono" 			path="oe-linux/meta-mono"/>
   <project remote="yocto" name="meta-java" 			path="oe-linux/meta-java"/>
   <project remote="yocto" name="meta-maker" 			path="oe-linux/meta-maker"/>
@@ -84,7 +85,6 @@
   <project name="poky"                           path="oe-linux/poky" remote="yocto" revision="022df4653576c72752156bef8fda0e1aa46733d2" upstream="pyro"/>
 
   <!-- Automotive Linux repo -->
-  <project remote="agl" name="meta-agl" path="AG-Linux" revsion="eel"/>
   <default remote="agl" revision="refs/tags/eel/5.0.2" sync-j="4"/>
   
   <project name="01org/meta-intel-iot-security" path="oe-linux/meta-intel-iot-security" remote="github" revision="20bbb97f6d5400b126ae96ef446c3e60c7e16285"/>
