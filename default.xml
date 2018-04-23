@@ -8,11 +8,9 @@
   <remote fetch="git://git.openembedded.org"      name="oe"/>
   <remote fetch="git://git.yoctoproject.org"      name="yocto"/>
   <remote fetch="git://github.com/"               name="github"/>
-  <remote fetch="http://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="http://git.linaro.org"           name="linaro"/>
   <remote fetch="http://git.shr-project.org"      name="shr"/>
   <remote fetch="git://code.qt.io/"               name="qt.io"/>
-  <remote fetch="git://git.yoctoproject.org/"     name="yocto"/>
   <remote fetch="https://gerrit.automotivelinux.org/gerrit/" name="agl"/>
   <default remote="agl" revision="refs/tags/eel/5.0.2" sync-j="4"/>
   
