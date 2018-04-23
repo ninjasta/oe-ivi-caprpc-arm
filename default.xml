@@ -92,26 +92,11 @@
            name="meta-intel"
            path="oe-linux/meta-intel"/>
 
-<!--	   
-  <project remote="yocto"
-		   upstream="pyro"
-		   revision="4cd63f57820ce0e4ebd598251d3a13b5a4b9b791"
-		   name="meta-intel"
-		   path="oe-linux/meta-intel" />
--->
-
   <project remote="yocto"
            upstream="rocko"
            revision="b58ccfc696e4fa6b680ae5ca79960312676d7af9"
            name="meta-raspberrypi"
            path="oe-linux/meta-raspberrypi"/>
-<!--		   
-  <project remote="yocto"
-  		   upstream="pyro"
-		   revision="40447de4782d76f1e23e67ba05e272c27f6ec250" 
-		   name="meta-raspberrypi"
-		   path="oe-linux/meta-raspberrypi" />
--->
   
   <project remote="agl" name="AGL/meta-agl"               path="AG-Linux/meta-agl"/>
   <project remote="agl" name="AGL/meta-agl-demo"          path="AG-Linux/meta-agl-demo"/>
