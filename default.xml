@@ -48,7 +48,7 @@
   <project remote="oe"     name="meta-opie"     path="oe-linux/meta-opie"/>
   <project remote="kc" 	   name="meta-nanopi.git"                       path="oe-linux/meta-nanopi"/>
 
-  <project remote="github" name="96boards/meta-96boards"                path="oe-linux/meta-96boards"/>
+  <project remote="github" name="96boards/meta-96boards"                path="oe-linux/meta-96boards" revision="rocko"/>
   <project remote="github" name="OverC/meta-qemuarma9"                  path="oe-linux/meta-qemuarma9"/>
   <project remote="github" name="openembedded/openembedded-core" 	path="oe-linux/openembedded-core" revision="rocko"/>
   <project remote="github" name="openembedded/bitbake" 		 	path="bitbake" revision="1.36"/>
