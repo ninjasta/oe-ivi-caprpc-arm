@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- settings -->
@@ -88,8 +87,7 @@
   <project name="poky" path="oe-linux/poky" remote="yocto" revision="022df4653576c72752156bef8fda0e1aa46733d2" upstream="pyro"/>
 
   <!-- Automotive Linux repo -->
-  <project remote="agl" name="meta-agl" path="AG-Linux" revsion="eel"/>
-  <default remote="agl" revision="refs/tags/eel/5.0.2" sync-j="4"/>
+  <default remote="agl" revision="refs/tags/eel/5.0.2"/>
   
   <project name="01org/meta-intel-iot-security" path="oe-linux/meta-intel-iot-security" remote="github" revision="20bbb97f6d5400b126ae96ef446c3e60c7e16285"/>
   <project name="01org/meta-security-isafw" path="oe-linux/meta-security-isafw" remote="github" revision="0fa0aff75ee21edd758a1baddc4522371a746f99" upstream="morty"/>
