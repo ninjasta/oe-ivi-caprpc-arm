@@ -19,12 +19,7 @@
   <remote fetch="https://github.com/ninjasta/oe-ivi-carpc-arm" name="my-ivi-repo"/>
 
  <!-- Base stuff from Pelux -->
- <!--
-  <project remote="oe"
-           revision="rocko"
-           name="meta-openembedded"
-           path="oe-linux/meta-openembedded"/>
- -->
+
   <project remote="github"
            revision="2c7899b9f71ce614a253d7875fe64e170159281a"
            name="Pelagicore/meta-bistro"
@@ -51,12 +46,12 @@
 
   <project remote="github" name="96boards/meta-96boards"                path="oe-linux/meta-96boards" revision="rocko"/>
   <project remote="github" name="OverC/meta-qemuarma9"                  path="oe-linux/meta-qemuarma9"/>
-  <!-- <project remote="github" name="openembedded/openembedded-core" 	path="oe-linux/openembedded-core" revision="rocko"/> -->
+
   <project remote="github" name="openembedded/bitbake" 		 	path="bitbake" revision="1.36"/>
   <project remote="github" name="OSSystems/meta-browser" 	 	path="oe-linux/meta-browser"/>
   <project remote="github" name="linux4sam/meta-atmel" 			path="oe-linux/meta-atmel" revision="morty"/>
   <project remote="github" name="linux-sunxi/meta-sunxi" 		path="oe-linux/meta-sunxi" revision="cee0b74ce4f72710b594a5bdcc7e533f43f71bc9" upstream="master"/>
-  <!-- <project remote="github" name="agherzan/meta-raspberrypi" 		path="oe-layers/meta-raspberrypi"/> -->
+
   <!-- from AG Linux eel manifest -->
   <project name="Freescale/meta-freescale" path="oe-linux/meta-freescale" remote="github" revision="06178400afbd641a6709473fd21d893dcd3cfbfa" upstream="pyro"/>
   <project name="Freescale/meta-freescale-3rdparty" path="oe-linux/meta-freescale-3rdparty" remote="github" revision="35badbde05d4f10d4faeefc30bc126b5bd228e2e" upstream="pyro"/>
@@ -70,17 +65,14 @@
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
 
-  <!-- <project remote="yocto" name="poky"                           path="oe-linux/poky" revsion="rocko"/> -->
   <project remote="yocto" name="meta-intel-iot-middleware"	path="oe-linux/meta-intel-iot-middleware"/>
   <project remote="yocto" name="meta-intel" 			path="oe-linux/meta-intel"/>
   <project remote="yocto" name="meta-xilinx" 			path="oe-linux/meta-xilinx"/>
-  <!-- <project remote="yocto" name="meta-ti" 			path="oe-linux/meta-ti"/> -->
   <project remote="yocto" name="meta-mono" 			path="oe-linux/meta-mono"/>
   <project remote="yocto" name="meta-java" 			path="oe-linux/meta-java"/>
   <project remote="yocto" name="meta-maker" 			path="oe-linux/meta-maker"/>
   <project remote="yocto" name="meta-qt4" 			path="oe-linux/meta-qt4"/>
   <project remote="github" name="GENIVI/meta-ivi" 		path="ivi/meta-ivi"/>
-  <!-- <project remote="yocto" name="meta-virtualization"		path="ivi/meta-virtualization"/> -->
   <!-- AG Linux -->
   <project name="meta-intel" path="oe-linux/meta-intel" remote="yocto" revision="4cd63f57820ce0e4ebd598251d3a13b5a4b9b791" upstream="pyro"/>
   <project name="meta-oic" path="oe-linux/oic" remote="yocto" revision="70d5bec59a3b8aabaa4a69f1d8513ff22d86b473" upstream="1.2.1"/>
