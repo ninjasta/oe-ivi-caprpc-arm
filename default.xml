@@ -11,7 +11,7 @@
   <remote fetch="http://git.linaro.org"           name="linaro"/>
   <remote fetch="http://git.shr-project.org"      name="shr"/>
   <remote fetch="git://code.qt.io/"               name="qt.io"/>
-  <remote fetch="https://gerrit.automotivelinux.org/gerrit/" name="agl"/>
+  <remote fetch="https://git.automotivelinux.org" name="agl"/>
   <default remote="agl" revision="refs/tags/eel/5.0.2" sync-j="4"/>
   
   <!-- Base stuff -->
@@ -26,7 +26,7 @@
            revision="6b744113ad3e564d1cb05411816b103d99fd84dc"
            name="poky"
            path="poky"/>
-  <!--
+
   <project remote="github"
            upstream="master"
            revision="1588619f627ef1bf40f9b93660c0f05a96a69cb9"
@@ -51,35 +51,35 @@
            name="meta-virtualization"
            path="ivi/meta-virtualization"/>
 		   
-  <!-- GENIVI stuff, update the upstream from master to 14.0 when possible
+  <!-- GENIVI stuff, update the upstream from master to 14.0 when possible -->
   <project remote="github"
            upstream="master"
            revision="5243d83ac2ef13d117065edae8e4f484e7e4f373"
            name="GENIVI/meta-ivi"
            path="ivi/meta-ivi" />
 
-  <!-- Qt + Qt Automotive support stuff
+  <!-- Qt + Qt Automotive support stuff -->
   <project remote="qt.io"
            upstream="5.10"
            revision="bc0625e7a03f9f04fdae3a89137812a216e977cd"
            name="yocto/meta-qt5"
            path="oe-linux/meta-qt5"/>
 
-  <!-- Boot2QT has no rocko branch
+  <!-- Boot2QT has no rocko branch -->
   <project remote="qt.io"
            upstream="pyro"
            revision="8513b63910eb9046c79ab3fb3df02a4e665f05b5"
            name="yocto/meta-boot2qt"
            path="oe-linux/meta-boot2qt"/>
 
-  <!-- Template layer stuff
+  <!-- Template layer stuff -->
   <project remote="github"
            upstream="rocko"
            revision="2841810fe46089dd064f14b0327ce36065feb4dd"
            name="Pelagicore/meta-template"
            path="ivi/meta-template"/>
 
-  <!-- BSP layers for Intel and rPi
+  <!-- BSP layers for Intel and rPi -->
   <project remote="yocto"
            upstream="rocko"
            revision="92d66730fba1fdc71d2548332c8ff57160e31b05"
