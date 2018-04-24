@@ -91,17 +91,15 @@
            revision="b58ccfc696e4fa6b680ae5ca79960312676d7af9"
            name="meta-raspberrypi"
            path="oe-linux/meta-raspberrypi"/> -->
-  
+<!--  
   <project remote="agl" name="AGL/meta-agl"               path="AG-Linux/meta-agl"/>
   <project remote="agl" name="AGL/meta-agl-demo"          path="AG-Linux/meta-agl-demo"/>
   <project remote="agl" name="AGL/meta-agl-devel"         path="AG-Linux/meta-agl-devel"/>
   <project remote="agl" name="AGL/meta-agl-extra"         path="AG-Linux/meta-agl-extra"/>
   <project remote="agl" name="AGL/meta-renesas"           path="AG-Linux/meta-renesas"/>
   <project remote="agl" name="AGL/meta-renesas-rcar-gen3" path="AG-Linux/meta-renesas-rcar-gen3"/>
-
   <project remote="linaro" name="openembedded/meta-linaro"          path="oe-linux/meta-linaro"/>
   <project remote="linaro" name="openembedded/meta-backports"       path="oe-linux/meta-backports"/>
-  
   <project remote="github" name="01org/meta-intel-iot-security"     path="AG-Linux/meta-intel-iot-security" revision="20bbb97f6d5400b126ae96ef446c3e60c7e16285"/>
   <project remote="github" name="01org/meta-security-isafw"         path="AG-Linux/meta-security-isafw" revision="0fa0aff75ee21edd758a1baddc4522371a746f99" upstream="morty"/>
   <project remote="github" name="openembedded/openembedded-core"    path="oe-linux/openembedded-core"/>
@@ -120,11 +118,11 @@
   <project remote="github" name="kraj/meta-altera"                  path="AG-Linux/meta-altera" revision="d4bbb7ef016eab4ab04c3e794dfe6f4276196c66" upstream="master"/>
   <project remote="github" name="linux-sunxi/meta-sunxi"            path="oe-linux/meta-sunxi" revision="cee0b74ce4f72710b594a5bdcc7e533f43f71bc9" upstream="master"/>
   <project remote="github" name="OSSystems/meta-browser"            path="oe-linux/meta-browser" revision="4dda3fb94072a515763d816e15855d7fdf210a25" upstream="master"/>
-
+-->
   <project remote="github" name="Angstrom-distribution/meta-angstrom" path="oe-linux/meta-angstrom" revision="angstrom-v2017.12-rocko" >
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
-         
+<!--         
   <project remote="yocto" name="meta-oic"            revision="70d5bec59a3b8aabaa4a69f1d8513ff22d86b473" upstream="1.2.1"/>
   <project remote="yocto" name="meta-qcom"           revision="e27bc2054557df848f22b05674e51f289491723b" upstream="pyro"/>           
   <project remote="yocto" name="meta-mono"           path="oe-linux/meta-mono"/>
@@ -133,5 +131,5 @@
   <project remote="yocto" name="meta-ti"             path="oe-linux/meta-ti" revision="230f5409bd47a850e718c81d485bb17b3d5ddcb0" upstream="master"/>
   <project remote="yocto" name="meta-xilinx"         path="oe-linux/meta-xilinx" revision="6ddc5873b0ede30e6542f0ab151a6236acc37944" upstream="master"/>
   <project remote="yocto" name="meta-java"           path="oe-linux/meta-java" revision="03e35bf64f97980652ac532cca0ea96e730a551c" upstream="master"/>
-
+-->
 </manifest>
