@@ -58,14 +58,14 @@
            name="GENIVI/meta-ivi"
            path="ivi/meta-ivi" />
 
-  <!-- Qt + Qt Automotive support stuff -->
+  <!-- Qt + Qt Automotive support stuff
   <project remote="qt.io"
            upstream="5.10"
            revision="bc0625e7a03f9f04fdae3a89137812a216e977cd"
            name="yocto/meta-qt5"
            path="oe-linux/meta-qt5"/>
 
-  <!-- Boot2QT has no rocko branch
+  Boot2QT has no rocko branch
   <project remote="qt.io"
            upstream="pyro"
            revision="8513b63910eb9046c79ab3fb3df02a4e665f05b5"
