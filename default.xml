@@ -14,7 +14,7 @@
   <remote fetch="git://code.qt.io/"               name="qt.io"/>
   <remote fetch="https://git.automotivelinux.org" name="agl"/>
   
-  <!-- Base stuff
+  <!-- Base stuff -->
   <project remote="oe"
            upstream="rocko"
            revision="dacfa2b1920e285531bec55cd2f08743390aaf57"
@@ -32,7 +32,7 @@
            revision="1588619f627ef1bf40f9b93660c0f05a96a69cb9"
            name="Pelagicore/meta-bistro"
            path="ivi/meta-bistro" />
-
+  <!--
   <project remote="github"
            revision="440929d4d135d8e0276076e5b2b67dc6e19b7be7"
            upstream="master"
@@ -44,14 +44,14 @@
            upstream="rocko"
            name="sbabic/meta-swupdate"
            path="ivi/meta-swupdate" />
-
+  
   <project remote="yocto"
            upstream="rocko"
            revision="bd77388f31929f38e7d4cc9c711f0f83f563007e"
            name="meta-virtualization"
            path="ivi/meta-virtualization"/>
-		   
-  GENIVI stuff, update the upstream from master to 14.0 when possible -->
+  -->		   
+  <!-- GENIVI stuff, update the upstream from master to 14.0 when possible -->
   <project remote="github"
            upstream="master"
            revision="5243d83ac2ef13d117065edae8e4f484e7e4f373"
