@@ -11,7 +11,7 @@
   <remote fetch="http://git.linaro.org"           name="linaro"/>
   <remote fetch="http://git.shr-project.org"      name="shr"/>
   <remote fetch="git://code.qt.io/"               name="qt.io"/>
-  <remote fetch="https://gerrit.automotivelinux.org/gerrit/" name="agl"/>
+<!--  <remote fetch="https://gerrit.automotivelinux.org/gerrit/" name="agl"/>
   <default remote="agl" revision="refs/tags/eel/5.0.2" sync-j="4"/>
   
   <!-- Base stuff -->
@@ -91,33 +91,38 @@
            revision="b58ccfc696e4fa6b680ae5ca79960312676d7af9"
            name="meta-raspberrypi"
            path="oe-linux/meta-raspberrypi"/>
-  
+<!--  
   <project remote="agl" name="AGL/meta-agl"               path="AG-Linux/meta-agl"/>
   <project remote="agl" name="AGL/meta-agl-demo"          path="AG-Linux/meta-agl-demo"/>
   <project remote="agl" name="AGL/meta-agl-devel"         path="AG-Linux/meta-agl-devel"/>
   <project remote="agl" name="AGL/meta-agl-extra"         path="AG-Linux/meta-agl-extra"/>
   <project remote="agl" name="AGL/meta-renesas"           path="AG-Linux/meta-renesas"/>
   <project remote="agl" name="AGL/meta-renesas-rcar-gen3" path="AG-Linux/meta-renesas-rcar-gen3"/>
-
+-->
   <project remote="linaro" name="openembedded/meta-linaro"          path="oe-linux/meta-linaro"/>
   <project remote="linaro" name="openembedded/meta-backports"       path="oe-linux/meta-backports"/>
-  
+<!--  
   <project remote="github" name="01org/meta-intel-iot-security"     path="AG-Linux/meta-intel-iot-security" revision="20bbb97f6d5400b126ae96ef446c3e60c7e16285"/>
   <project remote="github" name="01org/meta-security-isafw"         path="AG-Linux/meta-security-isafw" revision="0fa0aff75ee21edd758a1baddc4522371a746f99" upstream="morty"/>
+-->
   <project remote="github" name="openembedded/openembedded-core"    path="oe-linux/openembedded-core"/>
   <project remote="github" name="openembedded/bitbake"              path="bitbake" revision="1.36" />
+<!--
   <project remote="github" name="meta-rust/meta-rust"               path="AG-Linux/meta-rust" revision="94280a636c9a6dd729f9eb3ed88fe85b11ee8ffa" upstream="pyro"/>
   <project remote="github" name="phongt/meta-sdl"                   path="AG-Linux/meta-sdl" revision="d9451f4d2dd1a3927b0ce5e55a4f0dc9a3daee27"/>
+-->
   <project remote="github" name="shr-distribution/meta-smartphone"  path="oe-linux/meta-smartphone"/>
   <project remote="github" name="96boards/meta-96boards"            path="oe-linux/meta-96boards"/>
   <project remote="github" name="linux4sam/meta-atmel"              path="oe-linux/meta-atmel" revision="morty"/>
   <project remote="github" name="koenkooi/meta-dominion"            path="oe-linux/meta-dominion"/>
+<!--
   <project remote="github" name="Freescale/meta-freescale"          path="AG-Linux/meta-freescale"  revision="06178400afbd641a6709473fd21d893dcd3cfbfa" upstream="pyro"/>
   <project remote="github" name="Freescale/meta-freescale-3rdparty" path="AG-Linux/meta-freescale-3rdparty" revision="35badbde05d4f10d4faeefc30bc126b5bd228e2e" upstream="pyro"/>
   <project remote="github" name="Freescale/meta-freescale-distro"   path="AG-Linux/meta-freescale-distro"  revision="cd5c7a2539f40004f74126e9fdf08254fd9a6390" upstream="pyro"/>
   <project remote="github" name="advancedtelematic/meta-updater"    path="AG-Linux/meta-updater" revision="090141edfc5883a2fe0ed1faece3ee2da957d115" upstream="pyro"/>
   <project remote="github" name="boundarydevices/meta-boundary"     path="AG-Linux/meta-boundary" revision="fb9bd92e4173ded438cd05f4c5c7f7d028d29cc7" upstream="pyro"/>
   <project remote="github" name="kraj/meta-altera"                  path="AG-Linux/meta-altera" revision="d4bbb7ef016eab4ab04c3e794dfe6f4276196c66" upstream="master"/>
+-->
   <project remote="github" name="linux-sunxi/meta-sunxi"            path="oe-linux/meta-sunxi" revision="cee0b74ce4f72710b594a5bdcc7e533f43f71bc9" upstream="master"/>
   <project remote="github" name="OSSystems/meta-browser"            path="oe-linux/meta-browser" revision="4dda3fb94072a515763d816e15855d7fdf210a25" upstream="master"/>
 
