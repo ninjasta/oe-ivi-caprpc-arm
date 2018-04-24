@@ -3,6 +3,7 @@
 
   <!-- Settings -->
   <default revision="rocko" sync-j="4"/>
+  <default remote="agl" revision="refs/tags/eel/5.0.2" sync-j="4"/>
 
   <!-- Remotes -->
   <remote fetch="git://git.openembedded.org"      name="oe"/>
@@ -12,9 +13,8 @@
   <remote fetch="http://git.shr-project.org"      name="shr"/>
   <remote fetch="git://code.qt.io/"               name="qt.io"/>
   <remote fetch="https://git.automotivelinux.org" name="agl"/>
-  <default remote="agl" revision="refs/tags/eel/5.0.2" sync-j="4"/>
   
-  <!-- Base stuff -->
+  <!-- Base stuff
   <project remote="oe"
            upstream="rocko"
            revision="dacfa2b1920e285531bec55cd2f08743390aaf57"
