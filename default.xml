@@ -90,7 +90,7 @@
            upstream="rocko"
            revision="b58ccfc696e4fa6b680ae5ca79960312676d7af9"
            name="meta-raspberrypi"
-           path="oe-linux/meta-raspberrypi"/> -->
+           path="oe-linux/meta-raspberrypi"/>
 <!--  
   <project remote="agl" name="AGL/meta-agl"               path="AG-Linux/meta-agl"/>
   <project remote="agl" name="AGL/meta-agl-demo"          path="AG-Linux/meta-agl-demo"/>
