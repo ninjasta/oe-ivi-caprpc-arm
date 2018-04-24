@@ -5,13 +5,13 @@
   <default revision="rocko" sync-j="4"/>
   <default remote="agl" revision="refs/tags/eel/5.0.2" sync-j="4"/>
 
-  <!-- Remotes
+  <!-- Remotes -->
   <remote fetch="git://git.openembedded.org"      name="oe"/>
   <remote fetch="git://git.yoctoproject.org"      name="yocto"/>
   <remote fetch="git://github.com/"               name="github"/>
   <remote fetch="http://git.linaro.org"           name="linaro"/>
   <remote fetch="http://git.shr-project.org"      name="shr"/>
-  <remote fetch="git://code.qt.io/"               name="qt.io"/> -->
+  <remote fetch="git://code.qt.io/"               name="qt.io"/>
   <remote fetch="https://git.automotivelinux.org" name="agl"/>
   
   <!-- Base stuff -->
@@ -32,6 +32,7 @@
            revision="1588619f627ef1bf40f9b93660c0f05a96a69cb9"
            name="Pelagicore/meta-bistro"
            path="ivi/meta-bistro" />
+
   <project remote="github"
            revision="440929d4d135d8e0276076e5b2b67dc6e19b7be7"
            upstream="master"
@@ -43,14 +44,14 @@
            upstream="rocko"
            name="sbabic/meta-swupdate"
            path="ivi/meta-swupdate" />
-  
+
   <project remote="yocto"
            upstream="rocko"
            revision="bd77388f31929f38e7d4cc9c711f0f83f563007e"
            name="meta-virtualization"
            path="ivi/meta-virtualization"/>
 		   
-  <!-- GENIVI stuff, update the upstream from master to 14.0 when possible -->
+  <!-- GENIVI stuff, update the upstream from master to 14.0 when possible-->
   <project remote="github"
            upstream="master"
            revision="5243d83ac2ef13d117065edae8e4f484e7e4f373"
@@ -76,13 +77,14 @@
            upstream="rocko"
            revision="2841810fe46089dd064f14b0327ce36065feb4dd"
            name="Pelagicore/meta-template"
-           path="ivi/meta-template"/> 
+           path="ivi/meta-template"/>
+
   <!-- BSP layers for Intel and rPi -->
   <project remote="yocto"
            upstream="rocko"
            revision="92d66730fba1fdc71d2548332c8ff57160e31b05"
            name="meta-intel"
-           path="oe-linux/meta-intel"/> -->
+           path="oe-linux/meta-intel"/>
 
   <project remote="yocto"
            upstream="rocko"
@@ -96,8 +98,10 @@
   <project remote="agl" name="AGL/meta-agl-extra"         path="AG-Linux/meta-agl-extra"/>
   <project remote="agl" name="AGL/meta-renesas"           path="AG-Linux/meta-renesas"/>
   <project remote="agl" name="AGL/meta-renesas-rcar-gen3" path="AG-Linux/meta-renesas-rcar-gen3"/>
+
   <project remote="linaro" name="openembedded/meta-linaro"          path="oe-linux/meta-linaro"/>
   <project remote="linaro" name="openembedded/meta-backports"       path="oe-linux/meta-backports"/>
+  
   <project remote="github" name="01org/meta-intel-iot-security"     path="AG-Linux/meta-intel-iot-security" revision="20bbb97f6d5400b126ae96ef446c3e60c7e16285"/>
   <project remote="github" name="01org/meta-security-isafw"         path="AG-Linux/meta-security-isafw" revision="0fa0aff75ee21edd758a1baddc4522371a746f99" upstream="morty"/>
   <project remote="github" name="openembedded/openembedded-core"    path="oe-linux/openembedded-core"/>
@@ -130,4 +134,4 @@
   <project remote="yocto" name="meta-xilinx"         path="oe-linux/meta-xilinx" revision="6ddc5873b0ede30e6542f0ab151a6236acc37944" upstream="master"/>
   <project remote="yocto" name="meta-java"           path="oe-linux/meta-java" revision="03e35bf64f97980652ac532cca0ea96e730a551c" upstream="master"/>
 
-</manifest>
+<manifest>
