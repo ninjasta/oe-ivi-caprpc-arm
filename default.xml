@@ -91,7 +91,7 @@
            revision="b58ccfc696e4fa6b680ae5ca79960312676d7af9"
            name="meta-raspberrypi"
            path="oe-linux/meta-raspberrypi"/>
-<!--  
+  
   <project remote="agl" name="AGL/meta-agl"               path="AG-Linux/meta-agl"/>
   <project remote="agl" name="AGL/meta-agl-demo"          path="AG-Linux/meta-agl-demo"/>
   <project remote="agl" name="AGL/meta-agl-devel"         path="AG-Linux/meta-agl-devel"/>
@@ -118,11 +118,11 @@
   <project remote="github" name="kraj/meta-altera"                  path="AG-Linux/meta-altera" revision="d4bbb7ef016eab4ab04c3e794dfe6f4276196c66" upstream="master"/>
   <project remote="github" name="linux-sunxi/meta-sunxi"            path="oe-linux/meta-sunxi" revision="cee0b74ce4f72710b594a5bdcc7e533f43f71bc9" upstream="master"/>
   <project remote="github" name="OSSystems/meta-browser"            path="oe-linux/meta-browser" revision="4dda3fb94072a515763d816e15855d7fdf210a25" upstream="master"/>
--->
+<!--
   <project remote="github" name="Angstrom-distribution/meta-angstrom" path="oe-linux/meta-angstrom" revision="angstrom-v2017.12-rocko" >
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
-<!--         
+         
   <project remote="yocto" name="meta-oic"            revision="70d5bec59a3b8aabaa4a69f1d8513ff22d86b473" upstream="1.2.1"/>
   <project remote="yocto" name="meta-qcom"           revision="e27bc2054557df848f22b05674e51f289491723b" upstream="pyro"/>           
   <project remote="yocto" name="meta-mono"           path="oe-linux/meta-mono"/>
