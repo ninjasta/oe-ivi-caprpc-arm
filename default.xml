@@ -11,10 +11,10 @@
   <remote fetch="git://github.com/"               name="github"/>
   <remote fetch="http://git.linaro.org"           name="linaro"/>
   <remote fetch="http://git.shr-project.org"      name="shr"/>
-  <remote fetch="git://code.qt.io/"               name="qt.io"/>
+  <remote fetch="git://code.qt.io/"               name="qt.io"/> -->
   <remote fetch="https://git.automotivelinux.org" name="agl"/>
   
-   Base stuff -->
+  <!-- Base stuff -->
   <project remote="oe"
            upstream="rocko"
            revision="dacfa2b1920e285531bec55cd2f08743390aaf57"
