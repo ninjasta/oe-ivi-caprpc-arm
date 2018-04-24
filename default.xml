@@ -14,7 +14,7 @@
   <remote fetch="git://code.qt.io/"               name="qt.io"/>
   <remote fetch="https://git.automotivelinux.org" name="agl"/>
   
-  <!-- Base stuff
+  <!-- Base stuff -->
   <project remote="oe"
            upstream="rocko"
            revision="dacfa2b1920e285531bec55cd2f08743390aaf57"
@@ -51,7 +51,7 @@
            name="meta-virtualization"
            path="ivi/meta-virtualization"/>
 		   
-  GENIVI stuff, update the upstream from master to 14.0 when possible -->
+  <!-- GENIVI stuff, update the upstream from master to 14.0 when possible -->
   <project remote="github"
            upstream="master"
            revision="5243d83ac2ef13d117065edae8e4f484e7e4f373"
@@ -65,26 +65,25 @@
            name="yocto/meta-qt5"
            path="oe-linux/meta-qt5"/>
 
-  <!-- Boot2QT has no rocko branch -->
+  <!-- Boot2QT has no rocko branch
   <project remote="qt.io"
            upstream="pyro"
            revision="8513b63910eb9046c79ab3fb3df02a4e665f05b5"
            name="yocto/meta-boot2qt"
            path="oe-linux/meta-boot2qt"/>
 
-  <!-- Template layer stuff -->
+   Template layer stuff
   <project remote="github"
            upstream="rocko"
            revision="2841810fe46089dd064f14b0327ce36065feb4dd"
            name="Pelagicore/meta-template"
-           path="ivi/meta-template"/>
-
-  <!-- BSP layers for Intel and rPi -->
+           path="ivi/meta-template"/> 
+   BSP layers for Intel and rPi
   <project remote="yocto"
            upstream="rocko"
            revision="92d66730fba1fdc71d2548332c8ff57160e31b05"
            name="meta-intel"
-           path="oe-linux/meta-intel"/>
+           path="oe-linux/meta-intel"/> -->
 
   <project remote="yocto"
            upstream="rocko"
@@ -118,7 +117,7 @@
   <project remote="github" name="kraj/meta-altera"                  path="AG-Linux/meta-altera" revision="d4bbb7ef016eab4ab04c3e794dfe6f4276196c66" upstream="master"/>
   <project remote="github" name="linux-sunxi/meta-sunxi"            path="oe-linux/meta-sunxi" revision="cee0b74ce4f72710b594a5bdcc7e533f43f71bc9" upstream="master"/>
   <project remote="github" name="OSSystems/meta-browser"            path="oe-linux/meta-browser" revision="4dda3fb94072a515763d816e15855d7fdf210a25" upstream="master"/>
-<!--
+
   <project remote="github" name="Angstrom-distribution/meta-angstrom" path="oe-linux/meta-angstrom" revision="angstrom-v2017.12-rocko" >
       <copyfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
@@ -131,5 +130,5 @@
   <project remote="yocto" name="meta-ti"             path="oe-linux/meta-ti" revision="230f5409bd47a850e718c81d485bb17b3d5ddcb0" upstream="master"/>
   <project remote="yocto" name="meta-xilinx"         path="oe-linux/meta-xilinx" revision="6ddc5873b0ede30e6542f0ab151a6236acc37944" upstream="master"/>
   <project remote="yocto" name="meta-java"           path="oe-linux/meta-java" revision="03e35bf64f97980652ac532cca0ea96e730a551c" upstream="master"/>
--->
+
 </manifest>
